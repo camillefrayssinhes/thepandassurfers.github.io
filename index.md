@@ -15,35 +15,28 @@ What is the role of the media coverage in explaining stock market fluctuations ?
 
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, as can be seen below. However today, we look into [where it all began for Tesco, in London. *If you zoom in you might even find the original Tesco in **Hackney***.] MOFIDIER ICI EN FONCTION DES DONNÉES QU'ON AFFICHE APRÈS 
 
+{% include Store_Locations_London.html %}
 
-<div class="h_iframe">
-    <iframe src="_includes/Store_Locations_London.html" frameborder="0" allowfullscreen onload="this.style.height=(this.contentWindow.document.body.scrollHeight)/2+'px';"></iframe>
-</div>
+
 ### Where are we heading ?
 
 In order to provide the reader with a rough outline, we begin the story with a <a href='#PreCurs'>precursory look</a> into the data we have collected.
 This is accompanied by a look at the question <a href='#WhoIsTesco'>"How does the media coverage of Apple evolve over time ?"</a>.
-Following the initial overview, we develop our understanding of the data by <a href='#Londoners'>clustering the speakers</a> we consider according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers, which we use in later analyses.  
+Following the initial overview, we develop our understanding of the data by <a href='#Londoners'>clustering the speakers</a> we consider according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers, which we use in later analyses. 
 Then we will go deeper by analyzing the correlation between the stock market movements and the <a href='#Londoners'>sentiments expressed</a> in the quotes. 
 
 
-## Why this is important
+## Why this is important ? 
 
-*"Why is food important?"* sounds like an easy question to answer.
-However, besides the importance of having *enough* food, the modern-day issue in developed countries is having a proper composition and balance of nutrients.
-An improper diet might not lead to imbalanced <a href="https://en.wikipedia.org/wiki/Humorism">humours</a> as ancient doctors believed;
-it has however far reaching effects on an individual's health.
-Common concerns with regards to nutrition include high saturated fat consumption, high sugar consumption, low fibre consumption, and little variety in nutrients, that is, an unbalanced or skewed diet.
-
-This also constitutes an issue of public health as the UK, like most other European countries, maintains a socialised healthcare system.
-Therein, individual well-being and preventable health-outcomes become a <a href="https://www.bmj.com/content/349/bmj.g5143">societal concern</a>.
-Understanding the interplay of socio-economic factors and nutrition could allow for an improved resource allocation and more group-specific efforts to curb negative trends in nutrition;
-this in turn would lower the severity and prevent negative health outcomes.
-This would put off pressure from society and can also lead to higher individual happiness.
+Accurately predicting the stock markets is a complex task as there are millions of events and pre-conditions for a particular stock to move in a particular direction. 
+What if the media have an impact on the stock market ? For instance, what if a rise in the number of pessimistic words in the market column of a journal would foreshadow a <a href="https://archive.canadianbusiness.com/blogs-and-comment/medias-influence-on-stock-market/market">market downturn</a> the next day ? 
+Like most other industries, the financial industry communicates by sharing information and data through the media. People speaking in the media express their emotions and opinions. They also consume media, and in the process are influenced by the sentiments, feelings, and opinions expressed by others. Scientific studies show that people are often influenced by the data they consume, and that their decisions or actions are partly aligned with it. 
 
 ## What the Data Says
 
-The original data set was created based on purchase histories of Tesco Loyalty Card holders, which were then aggregated based on the place of residence of the card-holder to the different levels of granularity of census areas in the Greater London area.
+The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million unique, speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020.
+
+
 This data set, while extensive as it aggregates over 411 million individual purchased items, does not enable us to attribute the purchases to individuals or groups of individuals such as families.
 This is due on one hand to the fact that it would constitute a **massive** breach of privacy; on the other hand, the cards do not actually provide this data in the first place.
 Instead, the researchers opted for tracking consumption habits in the different areas based on an *average area product*, an abstraction of nutrient content for each product that is consumed in the area. Addionally they reported the relative fractions of different types of products consumed in each area.
