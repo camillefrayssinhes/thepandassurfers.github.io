@@ -3,6 +3,10 @@
 
 <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
 
+<div class="imgfill">
+ <img src="images/poulet.png" />
+</div>
+
 In the following, we want to investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. We explore the Quotebank data set and filter out any quotes that are not related to the company, the products or its direction board. We then combine it with informations on Apple stock market, collected with the Yahoo Finance API.
 
 What is the role of the media coverage in explaining stock market fluctuations ? [Firstly, we will examine who are the individuals who have influence over potential customers. Do these influencers have an impact on the company image and eventually, on the stock market ?] À MODIFIER. Then, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ? The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.

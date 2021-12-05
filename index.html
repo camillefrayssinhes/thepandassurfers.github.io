@@ -11,9 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>	
 	</head>
 	<body class="is-preload">
-		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
 
 		<!-- Load the element definition -->
 		<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
@@ -34,6 +34,51 @@
 							<img src="images/banner.jpg" alt="" />
 						</div>
 					</section>
+
+				<!-- Five -->
+				<section class="wrapper style1 align-left">
+					<div class="inner">
+						<h1>Massa sed condimentum</h1>
+						<zero-md src="index.md">
+							<!-- Wrap with a <template> tag -->
+								<template>
+									<!-- Load external stylesheets with a `<link rel="stylesheet">` tag -->
+									<style>
+										.markdown-body {
+											font-family: -apple-system,inherit,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+											font-size: 16px;
+											line-height: 1.5;
+											word-wrap: break-word;
+										}
+
+										img {
+											width: 100%; /* or any custom size */
+											height: 100%; 
+											object-fit: contain;
+										}
+
+										.markdown-body h1 {
+											font-family: -apple-system,inherit,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+											margin: .67em 0;
+											font-weight: 600;
+											padding-bottom: .3em;
+											font-size: 2em;
+											border-bottom: 1px solid var(--color-border-muted);
+										}
+
+										.markdown-body h2 {
+											font-family: -apple-system,inherit,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+											font-weight: 600;
+											padding-bottom: 0px;
+											font-size: 1.5em;
+											border-bottom: 1px solid var(--color-border-muted);
+										}
+
+									</style>
+									</template>
+						</zero-md>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+					</div>
 
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
@@ -77,13 +122,7 @@
 						</div>
 					</section>
 
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Massa sed condimentum</h2>
-							<zero-md src="index.md"></zero-md>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-						</div>
+
 
 						<!-- Gallery -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
