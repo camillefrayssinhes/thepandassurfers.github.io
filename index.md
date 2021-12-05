@@ -15,9 +15,10 @@ What is the role of the media coverage in explaining stock market fluctuations ?
 
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, as can be seen below. However today, we look into [where it all began for Tesco, in London. *If you zoom in you might even find the original Tesco in **Hackney***.] MOFIDIER ICI EN FONCTION DES DONNÉES QU'ON AFFICHE APRÈS 
 
-{% include Store_Locations_London.html %}
 
-
+<div class="h_iframe">
+    <iframe src="_includes/Store_Locations_London.html" frameborder="0" allowfullscreen onload="this.style.height=(this.contentWindow.document.body.scrollHeight)/2+'px';"></iframe>
+</div>
 ### Where are we heading ?
 
 In order to provide the reader with a rough outline, we begin the story with a <a href='#PreCurs'>precursory look</a> into the data we have collected.
