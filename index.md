@@ -1,5 +1,5 @@
 
-## What is the power of the media ? 
+## What is the media’s influence on stock market? 
 
 <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
 
@@ -7,19 +7,18 @@ In the following, we want to investigate the reciprocal relationships between th
 
 What is the role of the media coverage in explaining stock market fluctuations ? [Firstly, we will examine who are the individuals who have influence over potential customers. Do these influencers have an impact on the company image and eventually, on the stock market ?] À MODIFIER. Then, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ? The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.
 
-### Why the Apple company ? TITRE À MODIFIER
+### Why Apple ?
 
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, as can be seen below. However today, we look into [where it all began for Tesco, in London. *If you zoom in you might even find the original Tesco in **Hackney***.] MOFIDIER ICI EN FONCTION DES DONNÉES QU'ON AFFICHE APRÈS 
 
 {% include Store_Locations_London.html %}
 
 
-### What is the role of the media coverage in explaining stock market fluctuations ?
+### Where are we heading ?
 
 In order to provide the reader with a rough outline, we begin the story with a <a href='#PreCurs'>precursory look</a> into the data we have collected.
-This is accompanied by a look at the question <a href='#WhoIsTesco'>"Who is a Tesco Customer?"</a>.
-Following the initial overview, we develop our understanding of the data by <a href='#Londoners'>clustering</a> the areas we consider according to multiple socio-economic factors.
-This also allows us to assign <a href='#Labeling'>discrete attributes</a> to areas which we use in later analyses.
+This is accompanied by a look at the question <a href='#WhoIsTesco'>"How does the media coverage of Apple evolve over time ?"</a>.
+Following the initial overview, we develop our understanding of the data by <a href='#Londoners'>clustering</a> the speakers we consider according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers, which we use in later analyses.  
 After obtaining labels for the areas, we train predictive models that allow us to <a href='#Ensemble'>predict</a> socio-economic facts about an area based on their consumption habits.
 In order to address the black box approach our chosen models to represent, we additionally choose to try to model the prediction using more explainable <a href='#Responsible'>models</a>.
 These include <a href='#Trees'>Decision Trees</a> and <a href='#AssociationRules'>Association Rules</a>.
@@ -67,6 +66,8 @@ Some shifts in population movement may have happened during those four years, al
 ## What We Can Learn From the Data
 
 We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights and explore the data a little.
+
+### What is the role of the media coverage in explaining stock market fluctuations ?
 
 ### How does the media coverage of Apple evolve over time ?
 Are there any specific patterns we can observe across the years, for instance bigger coverage when there is the keynote ? Thousands of events occur around the world every day, and humans notice a small subset of these events. Yet, the media attract attention to specific events. In this regard, a company’s media visibility will definitely affect its stock price. We investigate the reciprocal relationships between the fluctuations of the stock market of Apple and media coverage related to this company for a period of 12 years (2008–2020).
