@@ -1,19 +1,11 @@
 
-## Where We Are
+## What is the power of the media ? 
 
-*London, England*.
-Capital of an old Empire that sailed forth to conquer the world in search of tea and spices, only to return to a diet of <a href="http://www.foodsofengland.co.uk/peawet.htm">pea wet</a> and beer.
-Or did it?
-As in, did it return to such a diet?
-As a consequence of its history, London is nowadays one of the most multicultural cities in Europe and consequently also one of the most multi-culinary ones.
-This allows us to analyse the consumption habits of modern Londoners to find out how our plates divide us and how they define us.
+<a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
 
-In the following, we want to analyse a data set of purchases by *Tesco Loyalty Cardholders* in districts of the Greater London Metropolitan Area.
-We then combine it with information on the areas' inhabitants, collected by the Greater London census.
+In the following, we want to investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. We explore the Quotebank data set and filter out any quotes that are not related to the company, the products or its direction board. We then combine it with informations on Apple stock market, collected with the Yahoo Finance API.
 
-Apple has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. In this project, we aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company. The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.
-
-Firstly, we will wonder what is the role of the media coverage in explaining stock market fluctuations ? Then, we will examine who are the individuals who have influence over potential customers, and do these influencers have an impact on the company image and eventually, on the stock market ? Eventually, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ?
+What is the role of the media coverage in explaining stock market fluctuations ? [Firstly, we will examine who are the individuals who have influence over potential customers. Do these influencers have an impact on the company image and eventually, on the stock market ?] À MODIFIER. Then, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ? The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.
 
 ### Why the Apple company ? TITRE À MODIFIER
 
