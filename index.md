@@ -22,10 +22,9 @@ Apple is an American multinational technology company that specializes in consum
 
 In order to provide the reader with a rough outline, we begin the story with a <a href='#PreCurs'>precursory look</a> into the data we have collected.
 This is accompanied by a look at the question <a href='#WhoIsTesco'>"How does the media coverage of Apple evolve over time ?"</a>.
-Following the initial overview, we develop our understanding of the data by <a href='#Londoners'>clustering</a> the speakers we consider according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers, which we use in later analyses.  
-After obtaining labels for the areas, we train predictive models that allow us to <a href='#Ensemble'>predict</a> socio-economic facts about an area based on their consumption habits.
-In order to address the black box approach our chosen models to represent, we additionally choose to try to model the prediction using more explainable <a href='#Responsible'>models</a>.
-These include <a href='#Trees'>Decision Trees</a> and <a href='#AssociationRules'>Association Rules</a>.
+Following the initial overview, we develop our understanding of the data by <a href='#Londoners'>clustering the speakers</a> we consider according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers, which we use in later analyses.  
+Then we will go deeper by analyzing the correlation between the stock market movements and the <a href='#Londoners'>sentiments expressed</a> in the quotes. 
+
 
 ## Why this is important
 
