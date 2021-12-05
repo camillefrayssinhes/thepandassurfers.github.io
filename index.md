@@ -34,22 +34,13 @@ Like most other industries, the financial industry communicates by sharing infor
 
 ## What the Data Says
 
-The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million unique, speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020.
+The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This **extensive** data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions** in the media, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
 
+The <a href="https://finance.yahoo.com/quote/AAPL/"> Yahoo Finance API </a> allows us to recover informations about the Apple stock market. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
 
-This data set, while extensive as it aggregates over 411 million individual purchased items, does not enable us to attribute the purchases to individuals or groups of individuals such as families.
-This is due on one hand to the fact that it would constitute a **massive** breach of privacy; on the other hand, the cards do not actually provide this data in the first place.
-Instead, the researchers opted for tracking consumption habits in the different areas based on an *average area product*, an abstraction of nutrient content for each product that is consumed in the area. Addionally they reported the relative fractions of different types of products consumed in each area.
+We compare the Apple stock (*$AAPL*) to the S&P500 (*$SPY*) from 2008 until 2020, which is a stock market index tracking the performance of 500 largest companies listed on stock exchanges in the US. We have chosen this equity index as it is one of the most tracked indices and generally an indicator of the overall health of the US stock market.
 
-This approach balances out population differences in each of the collection areas as they are roughly equally sized and additionally filters out noise concerning special purchase habits.
-For example, tourist consumption is not taken into account as they generally do not have a loyalty card.
-A higher alcohol consumption near stadiums would also be filtered out, as loyalty card purchases are attributed to the place of residence, not the place of purchase.
-
-The three types of granularity we consider are Lower Super Output Areas (**LSOAs**), Medium Super Output Areas (**MSOAs**), and **Wards**.
-These do not all address the issue of imbalanced population distribution.
-Especially wards, which represent electoral boundaries rather than census areas follow a flat peaked distribution.
-
-{% include Population_Distribution.html %}
+{% include plot_correspondant.html %}
 
 The census data we process is provided by the [London Data Stores](https://data.london.gov.uk/) and covers data from the most recent census, 2011.
 This might seem like antiquated data.
