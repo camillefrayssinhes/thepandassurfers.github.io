@@ -36,18 +36,11 @@ Like most other industries, the financial industry communicates by sharing infor
 
 The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This **extensive** data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions** in the media, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
 
-The <a href="https://finance.yahoo.com/quote/AAPL/"> Yahoo Finance API </a> allows us to recover informations about the Apple stock market. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
+The finance data we process is provided by the <a href="https://finance.yahoo.com/quote/AAPL/"> Yahoo Finance API </a> and allows us to recover informations about the Apple stock market since 2008. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
 
 We compare the Apple stock (*$AAPL*) to the S&P500 (*$SPY*) from 2008 until 2020, which is a stock market index tracking the performance of 500 largest companies listed on stock exchanges in the US. We have chosen this equity index as it is one of the most tracked indices and generally an indicator of the overall health of the US stock market.
 
 {% include plot_correspondant.html %}
-
-The census data we process is provided by the [London Data Stores](https://data.london.gov.uk/) and covers data from the most recent census, 2011.
-This might seem like antiquated data.
-However, it is close to the collection year of the loyalty card data in 2015.
-Some shifts in population movement may have happened during those four years, although we do not expect rapid changes in the socio-economic make-up of an area.
-
-{% include Multilayer_Nutrient_Plot.html %}
 
 <a id='PreCurs'></a>
 
