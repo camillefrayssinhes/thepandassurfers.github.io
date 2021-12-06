@@ -7,7 +7,7 @@ In the following, we want to investigate the reciprocal relationships between th
 
 What is the role of the media coverage in explaining stock market fluctuations ? [Firstly, we will examine who are the individuals who have influence over potential customers. Do these influencers have an impact on the company image and eventually, on the stock market ?] À MODIFIER. Then, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ? The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.
 
-<div class="img">
+<div class="imgfill" align="center">
  <img src="images/poulet.png" />
 </div>
 
