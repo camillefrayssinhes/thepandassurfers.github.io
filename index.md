@@ -80,8 +80,7 @@ We can see that the "summit line" previously observed for general alcohol consum
 
 <a id='WhoIsTesco'></a>
 
-### Who are the individuals who have influence over potential customers, and do these influencers have an impact on the Apple company image and eventually, on the stock market ?
-Personality plays a huge role in consumer buying behavior. Indeed, the high level of public attention and the positive emotional responses that define celebrity increase the economic opportunities available to a firm. We hypothesize that quotes from celebrities significantly impact the stock market, whereas quotes from ordinary people have no significant predictive power. One defining characteristic of a celebrity is that it is a social actor who attracts large-scale public attention : the greater the number of people who know of and pay attention to the actor, the greater the extent and value of that celebrity.
+### xxxxxxx
 
 To answer this question we looked at an important piece of information that the researchers provided with the dataset: the relative representativeness that each area achieved.
 Here, the *representativeness* of an area is defined as the ratio between the number of loyalty card-holding customers residing in it and its total number of inhabitants.
@@ -109,8 +108,8 @@ Lastly, a fact that might at least bias the result is skewed data collection.
 In the original data set, a higher number of Tesco stores from which the data was collected was situated north of the Thames.
 This introduces a bias towards the more ethnically diverse areas of northern London and its urban core. However here the question might still stand, if this is a cause or an effect based on Tesco Modi operandi, or might even have another causes.
 
-### What is the influence of the public opinions or emotions about Apple expressed in the media on the stock market ?
-Media influences beliefs by providing compelling information about events. In this regard, the media have been identified to play a significant role in shaping the consensus market opinion. Can a series of news articles make a stock rise? On the other hand, can it send a market into turmoil ? We hypothesize that emotions of the public in the media about a company would reflect in its stock price. Indeed, positive news about Apple would encourage people to invest in the stocks of the company. On the other hand, increases in expressions of anxiety, worry and fear would predict downward pressure on the stocks of the company. Understanding the author's opinion from a piece of text is the objective of sentiment analysis. We classify quotes as positive, negative and neutral based on the sentiment present. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes ?
+### xxxxxx
+
 
 Today is the day the snake catches its tail. During the [1854 Cholera epidemic](https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak) in London, the researcher John Snow applied techniques of data collection, [visualisation](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Snow-cholera-map-1.jpg/1280px-Snow-cholera-map-1.jpg) and analysis to halt the spread of the virus.
 Thanks to his research, he became both one of the precursors of modern epidemiologists and the avant-garde of data science.
@@ -158,7 +157,9 @@ Nevertheless, we are encouraged to solve this rather enticing mystery.
 
 <a id='Londoners'></a>
 
-## The *Who* is *Who* of London
+## Who are the individuals who have influence over potential customers, and do these influencers have an impact on the Apple company image and eventually, on the stock market ?
+
+Personality plays a huge role in consumer buying behavior. Indeed, the high level of public attention and the positive emotional responses that define celebrity increase the economic opportunities available to a firm. We hypothesize that quotes from celebrities significantly impact the stock market, whereas quotes from ordinary people have no significant predictive power. One defining characteristic of a celebrity is that it is a social actor who attracts large-scale public attention : the greater the number of people who know of and pay attention to the actor, the greater the extent and value of that celebrity.
 
 As an important next step to explore the consumption habits of Londoners, we need to subdivide the population of London into areas with highly similar socio-economic make-ups.
 To achieve this, we conducted *Agglomerative Hierarchical Clustering*.
@@ -208,7 +209,9 @@ To explore our clustering results on a cross-sectional basis for each area, you 
 
 <a id='Ensemble'></a>
 
-## Can We Go Deeper?
+## Can We Go Deeper? What is the influence of the public opinions or emotions about Apple expressed in the media on the stock market ?
+
+Media influences beliefs by providing compelling information about events. In this regard, the media have been identified to play a significant role in shaping the consensus market opinion. Can a series of news articles make a stock rise? On the other hand, can it send a market into turmoil ? We hypothesize that emotions of the public in the media about a company would reflect in its stock price. Indeed, positive news about Apple would encourage people to invest in the stocks of the company. On the other hand, increases in expressions of anxiety, worry and fear would predict downward pressure on the stocks of the company. Understanding the author's opinion from a piece of text is the objective of sentiment analysis. We classify quotes as positive, negative and neutral based on the sentiment present. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes ?
 
 After the basic analysis, the main goal we set out to achieve is training models to predict socio-economic properties of areas based on food consumption habits.
 For this, we used the data set on the MSOA Level, as it has more areas with higher representativeness in comparison to the LSOA level, while also providing a higher granularity than the next higher granularity, Wards.

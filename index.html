@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>	
+		<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>			
 	</head>
 	<body class="is-preload">
 
@@ -25,7 +25,7 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Influence of the Media on Apple Stock Market</h1>
-							<p class="major">A (modular, highly tweakable) responsive one-page template designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a>.</p>
+							<p class="major"><i>“The people who are crazy enough to think they can change the world are the ones who do.”</i> <b>Steve Jobs</b></p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
@@ -356,27 +356,119 @@
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
+							<h2>Meet the team !</h2>
+							<style>
+								/* Four columns side by side */
+								.column {
+								float: left;
+								width: 25%;
+								margin-bottom: 16px;
+								padding: 0 8px;
+								}
+
+								/* Display the columns below each other instead of side by side on small screens */
+								@media screen and (max-width: 650px) {
+								.column {
+									width: 100%;
+									display: block;
+								}
+								}
+
+								/* Add some shadows to create a card effect */
+								.card {
+								box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+								}
+
+								/* On mouse-over, add a deeper shadow */
+								.card:hover {
+								box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+								}
+
+								/* Some left and right padding inside the container */
+								.container {
+								padding: 0 16px;
+								}
+
+								/* Clear floats */
+								.container::after, .row::after {
+								content: "";
+								clear: both;
+								display: table;
+								}
+
+								.title {
+								color: grey;
+								}
+
+								.button {
+								border: none;
+								outline: 0;
+								display: inline-block;
+								padding: 8px;
+								color: rgb(255, 255, 255);
+								background-color: rgb(255, 255, 255);
+								text-align: center;
+								cursor: pointer;
+								width: 100%;
+								}
+
+								.button:hover {
+								background-color: rgb(175, 172, 172);
+								} 
+							</style>
+							<div class="row">
+								<div class="column">
+								  <div class="card">
+									<img src="images/Raph.jpg" alt="Raph" style="width:34%">
+									<div class="container">
+									  <h2>Raphaël Attias</h2>
+									  <p class="title">Data Sciences</p>
+									  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+									  <p>raphael.attias@epfl.ch</p>
+									  <p><button class="button">Contact</button></p>
 									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
+								  </div>
+								</div>
+							  
+								<div class="column">
+								  <div class="card">
+									<img src="img2.jpg" alt="Cam" style="width:100%">
+									<div class="container">
+									  <h2>Camille Frayssinhes</h2>
+									  <p class="title">Life Sciences</p>
+									  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+									  <p>camille.frayssinhes@epfl.ch</p>
+									  <p><button class="button">Contact</button></p>
 									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
+								  </div>
+								</div>
+
+								<div class="column">
+									<div class="card">
+									  <img src="img2.jpg" alt="Bapt" style="width:100%">
+									  <div class="container">
+										<h2>Baptiste Hernette</h2>
+										<p class="title">Mathematics</p>
+										<p>Some text that describes me lorem ipsum ipsum lorem.</p>
+										<p>baptiste.hernette@epfl.ch</p>
+										<p><button class="button">Contact</button></p>
+									  </div>
 									</div>
 								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
+							  
+								<div class="column">
+								  <div class="card">
+									<img src="img3.jpg" alt="Gasp" style="width:100%">
+									<div class="container">
+									  <h2>Gaspard Villa</h2>
+									  <p class="title">Mathematics</p>
+									  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+									  <p>gaspard.villa@epfl.ch</p>
+									  <p><button class="button">Contact</button></p>
+									</div>
+								  </div>
+								</div>
+							  </div> 
 						</div>
 					</section>
 
