@@ -3,16 +3,19 @@
 
 <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
 
-<div class="imgfill">
- <img src="images/poulet.png" />
-</div>
-
 In the following, we want to investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. We explore the Quotebank data set and filter out any quotes that are not related to the company, the products or its direction board. We then combine it with informations on Apple stock market, collected with the Yahoo Finance API.
 
 What is the role of the media coverage in explaining stock market fluctuations ? [Firstly, we will examine who are the individuals who have influence over potential customers. Do these influencers have an impact on the company image and eventually, on the stock market ?] À MODIFIER. Then, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ? The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.
 
+<div class="img">
+ <img src="images/poulet.png" />
+</div>
+
 ### Why Apple ?
 
+<div class="h_iframe" align="center" >
+    <iframe src="_includes/world_map_apple_stores.html" frameborder="0" allowfullscreen style="width:100%; height:400px;overflow:auto;" ></iframe>
+</div>
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, as can be seen below. However today, we look into [where it all began for Tesco, in London. *If you zoom in you might even find the original Tesco in **Hackney***.] MOFIDIER ICI EN FONCTION DES DONNÉES QU'ON AFFICHE APRÈS 
 
 
