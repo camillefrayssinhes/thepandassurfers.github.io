@@ -15,8 +15,6 @@ What is the role of the media coverage in explaining stock market fluctuations ?
 
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, as can be seen below. However today, we look into [where it all began for Tesco, in London. *If you zoom in you might even find the original Tesco in **Hackney***.] MOFIDIER ICI EN FONCTION DES DONNÉES QU'ON AFFICHE APRÈS 
 
-{% include Store_Locations_London.html %}
-
 
 ### Where are we heading ?
 
@@ -40,8 +38,6 @@ The finance data we process is provided by the <a href="https://finance.yahoo.co
 
 We compare the Apple stock (*$AAPL*) to the S&P500 (*$SPY*) from 2008 until 2020, which is a stock market index tracking the performance of 500 largest companies listed on stock exchanges in the US. We have chosen this equity index as it is one of the most tracked indices and generally an indicator of the overall health of the US stock market.
 
-{% include plot_correspondant.html %}
-
 <a id='PreCurs'></a>
 
 ## What We Can Learn From the Data
@@ -56,7 +52,6 @@ Are there any specific patterns we can observe across the years, for instance bi
 
 Starting with a correlation analysis, we applied Spearman correlation to identify statistically significant, *(p < 0.05)*, rank correlations between socio-economic facts and nutrients to identify possible pattern that we can observe and expand on further.
 
-{% include Correlation_Nutirents_Different_Ethnicitites.html %}
 
 We can already make a few interesting observations.
 First, we see that there is a strong correlation in multiple groups regarding fibre, protein, alcohol, and sugar consumption.
@@ -66,17 +61,13 @@ Especially the high distinctiveness between the latter two concerning carbohydra
 *"Intelligentsia bibent", as my Latin teacher would say*.
 Another interesting observation is the high correlation between fibre and alcohol consumption and area wealth.
 
-{% include Correlation_Nutirents_Income_Eductation_Ethnicitites.html %}
 
 Combining the former observations, we can look into an area's alcohol consumption in a joint relation of its inhabitants' wealth and ethnic make-up.
 We observe a clear trend, most strongly in cases where both attributes increase jointly.
 
-{% include 3D_Plot_White_Median_Income_Alcohol.html %}
-
 Something interesting in this context is that we can divide alcohol consumption into the different categories of alcoholic products, that is, into wine and spirits.
 We can see that the "summit line" previously observed for general alcohol consumption appears anew when observing wine consumption, while the pattern is nearly inverted with respect to spirit consumption.
 
-{% include 3D_Multi_Plot_Spirits_Wine.html %}
 
 <a id='WhoIsTesco'></a>
 
@@ -88,12 +79,10 @@ An area with low representativeness has few Tesco customers and thus prevents ex
 *The similarity to the UKs first-past-the post election system is left uncommented by the Authors*.
 The ratio was then normalised using a min-max-scaling to provide normalised representativeness, with the most representative area having a representativeness of 1 and the least representative area having a representativeness of 0.
 
-{% include Map_Factory_Representativness.html %}
 
 Representativeness gives us a measure to analyse why an area has a high or low number of Tesco customers, or rather, loyalty card-holding inhabitants.
 Looking at the Spearman correlation, a statistically significant correlation between representativeness and socio-economic factors can be observed for multiple groups, both positively and negatively:
 
-{% include Correlation_Representativness_Norm_White.html %}
 
 Most of the correlations are rather weak.
 Nevertheless, they can provide interesting explanations for the results initially obtained by the authors of the original paper.
@@ -115,7 +104,6 @@ Today is the day the snake catches its tail. During the [1854 Cholera epidemic](
 Thanks to his research, he became both one of the precursors of modern epidemiologists and the avant-garde of data science.
 Today, we feel honoured in that we can say that we are back at the beginning, *analysing water consumption in London during a pandemic*.
 
-{% include Correlation_Water_Wealth.html %}
 
 A question sprang to our attention during our analysis of the correlation between different socio-economic factors and product consumption.
 Why does water consumption strongly correlate with area median income and different ethnicities?
@@ -123,7 +111,6 @@ Especially as in this case we are considering water purchased in supermarkets, n
 This result is somehow counter-intuitive: One would expect people with low income to drink less bottled water because it is more expensive.
 Early on, this led us to explore the interrelations of social factors and economic factors of an area.
 
-{% include Map_Factory_Water.html %}
 
 A few working theories we developed during the analysis were:
 
@@ -177,8 +164,6 @@ As the weather in London is rather _Covidy_ around this time of the year and thu
 We then verified our conclusion through wider research on the areas.
 For the grouped areas we identified labels based on the shared attributes we used for clustering the groups in the first place.
 
-{% include Map_Factory_Education.html %}
-
 One example case was the groupings based on the education level of the population of the area, which resulted in the model reaching a high silhouette score for 3 clusters.
 For these three clusters, we then analysed the area's median number of inhabitants with a certain education level tracked in the census.
 For the first grouping, we discovered an especially high number of inhabitants having a Level 4 or higher education level, which in the UK represents people with at least a certificate of higher education.
@@ -196,14 +181,10 @@ Another flaw is that Indian, Pakistani and Bangladeshi minorities, are grouped u
 
 <a id='Distribution'></a>
 
-{% include Sunburst_.html %}
-
 An additional pitfall is that the approach leads to unbalanced label distribution, as certain distinct groups in society are less common and in some instances prevent extraction of subgroups altogether as they are far too dispersed over the whole set of areas and overshadowed by other groups.
 For example, we are entirely missing areas with Middle Eastern, Sikh, or Jewish majorities.
 The effects of these pitfalls can be seen later in the predictive models and will be addressed during the model learning stage.
 To explore our clustering results on a cross-sectional basis for each area, you can use the interactive map below:
-
-{% include Multilayer_Population_Plot.html %}
 
 ---
 
@@ -237,8 +218,6 @@ Each tree in the model represents a layered application of simple rules, which w
 These can then again be split based on another feature in the next layer of the tree.
 Before we start the analysis, we need to address the pitfalls of the clustering which led to obvious unequal labelling.
 For example, many more areas have a Christian or white majority in comparison to a Hindu majority or an Asian majority.
-
-{% include Donuts_Clusters.html %}
 
 We address this issue by oversampling the minority labels to improve the model performance, as Random Forests are preferential towards the majority class.
 We compared different oversampling techniques, such as random oversampling, which just entails drawing from the minority labels samples with replacement.
@@ -277,7 +256,6 @@ However, they performed rather badly at distinguishing the minority classes betw
 We can see that it is both rather *precise* (middle) and *recall*s the majority of the white majority areas (right).
 But it is bad at identifying ethnically diverse areas, which get misclassified across the complete spectrum.
 
-{% include Heatmap_Ethnicity_RandomForest_Nutrients.html %}
 
 *After addressing the training of the models, we also want find out some more about their inner workings and what are the most impactful facts they used in their predictions.*
 
@@ -293,14 +271,12 @@ This is due to the fact that only subsets of features are considered for each sp
 Thus an important feature might just have bad luck in the lottery and gets chosen a less often than other features.
 Hence, feature importance needs to be taken with a grain of salt.
 
-{% include FeatureImportance_Religion_RandomForest_Nutrients.html %}
 
 For the model based on nutrients, we can see that especially nutrient diversity, protein, and salt consumption are often chosen splitting features in the classifiers.
 Finding a rationale behind the importance of a feature can be difficult without knowledge of the way they split up the groups.
 We might find some superficial explanations, such as vegetarianism being more prevalent in Hindu circles and thus leading to a lower protein, i.e meat consumption.
 But finding in-depth explanations is very difficult.
 
-{% include FeatureImportance_Religion_RandomForest_Products.html %}
 
 Looking into which specific kinds of products have high importance regarding splitting presents a few more insights.
 Especially fish, dairy, sweets, and wine consumption are highly important in identifying the religious majority in an area.
@@ -340,8 +316,6 @@ For example, in a more extreme case, the decision tree pendant to our best perfo
 The random forest however also achieves a higher base accuracy and a better F1-score.
 *Let's look into the decision tree model*.
 
-{% include_relative images/Religion_Products.svg %}
-
 First off, we can see that the first and most defined split is based on sweets consumption, with many majority Christian areas having a lower fraction of consumption.
 For the next split, something interesting can be observed.
 Splitting based on fish consumption separates the Muslim and Hindu majority communities almost perfectly.
@@ -372,8 +346,6 @@ For example, instead of having the groups {Working Class, Secondary School} and 
 This had some unintended consequences. We found after filtering that we had, in the process, lost all rules with support higher than 0.1. We then further observed there was a pretty strong dichotomy between rules. As a rule of thumb, a rule either had high support (>0.1) and on the other hand a low lift (< 1.2), or it had a high lift (> 2) and low support (<0.07). This comes down to the distinction between making general, rather weak statements about large populations and making very precise statements about small groups. In the end, we opted for the second approach, as rules with low lift simply don't make very strong statements.
 
 From the remaining rules, we selected a few by hand, as putting them all here would probably triple the length of the page at the very least.
-
-{% include AssociationRuleTable_Nutrients.html %}
 
 These rules let us reinforce observations made beforehand.
 For example, we can see that the working class tends to have increased spirits consumption while generally avoiding wine, or that the working class has a high sweets consumption.
@@ -440,7 +412,5 @@ The Romans, big into public infrastructure, built many roads. Places, where thre
 Although it might date the creation of this data story a little bit, we wish you all Happy Holidays and a hopefully better 2021.
 Take an example from the Londoners and have a nice increase in your fat, sugar and alcohol consumption while you are at it, and see you in 2021.
 *If you read this in 2021, don't forget to cancel the New Years resolution GYM membership before it's too late.*
-
-{% include year_plot_nutrients.html %}
 
 
