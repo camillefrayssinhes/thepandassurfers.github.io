@@ -10,7 +10,7 @@ What is the role of the media coverage in explaining stock market fluctuations ?
 ### Why Apple ?
 
 <div class="h_iframe" align="center" >
-    <iframe src="includes/world_map_apple_stores.html" frameborder="0" allowfullscreen style="width:100%; height:400px;overflow:auto;" ></iframe>
+    <iframe src="_includes/world_map_apple_stores.html" frameborder="0" allowfullscreen style="width:100%; height:400px;overflow:auto;" ></iframe>
 </div>
 
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, and Apple possesses stores around the world as can be seen below. If you zoom in you might even find the original Apple store at Tysons Corner in McLean, Virginia, USA ! 
@@ -39,19 +39,19 @@ The finance data we process is provided by the <a href="https://www.yahoofinance
 We study the liquidity traded for the Apple stock (*$AAPL*) between 2015 and 2019. Market liquidity depends on how much interest the public has in the particular asset in question. For example, Apple’s stock is much more liquid than the average tech company’s shares. The reason is that the business is well-known, with solid fundamentals, so investors often have a greater interest in it. In the graph below, the liquidity traded is displayed in blue (regular), and the top 2% of days per year for which the liquidity traded is maximal is displayed in red (volatile). We observe the same trend for the top 2% of days for maximal liquidity traded over the years. It seems that 4 to 6 times a year, a higher liquidity is traded and this is likely to correspond to Apple events in which the company announces release and information on each new product before it hits the market. This allows the consumer to build a demand for the product before it ever hits the shelf. 
 
 <div class="h_iframe" align="center" >
-    <iframe src="includes/liquidity.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
+    <iframe src="_includes/liquidity.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
 </div>
 
 We then study the daily stock price for the Apple stock between 2015 and 2019. The stock price is steadily increasing since 2016. However, we notice some drops, particularly in January 2019 and in July 2019. We will try to provide interesting explanations for these drops using the media coverage of Apple in later analyses. (REF À METTRE)
 
 <div class="h_iframe" align="center" >
-    <iframe src="includes/stock_price.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
+    <iframe src="_includes/stock_price.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
 </div>
 
 Finally, we have a look at the daily number of quotes related to Apple between 2015 and 2019. Here again, the daily number of quotes is displayed in blue, and the top 2% of the days for which the number of quotes related to Apple is maximal is displayed in red. In the same idea, similar trends are observed top 2% of days for maximal quotations of Apple over the years.
 
 <div class="h_iframe" align="center" >
-    <iframe src="includes/daily_quotes.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
+    <iframe src="_includes_/daily_quotes.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
 </div>
 
 A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Are the top 2% of the days for which the liquidity traded is the highest correlated to the top 2% of days for which the quotations related to Apple are the highest ? 
