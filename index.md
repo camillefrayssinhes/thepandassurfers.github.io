@@ -16,7 +16,7 @@ What is the role of the media coverage in explaining stock market fluctuations ?
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, and Apple possesses stores around the world as can be seen below. If you zoom in you might even find the original Apple store at Tysons Corner in McLean, Virginia, USA ! 
 
 
-### Where are we heading ?
+### Where Are We Heading ?
 
 In order to provide the reader with a rough outline, we begin the story with a <a href='#PreCurs'>precursory look</a> into the data we have collected.
 This is accompanied by a look at the question <a href='#WhoIsTesco'>"How does the media coverage of Apple evolve over time ?"</a>.
@@ -24,23 +24,42 @@ Following the initial overview, we develop our understanding of the data by <a h
 Then we will go deeper by analyzing the correlation between the stock market movements and the <a href='#Londoners'>sentiments expressed</a> in the quotes. 
 
 
-## Why is this important ? 
+### Why Is This Important ? 
 
 Accurately predicting the stock markets is a complex task as there are millions of events and pre-conditions for a particular stock to move in a particular direction. 
 What if the media have an impact on the stock market ? For instance, what if a rise in the number of pessimistic words in the market column of a journal would foreshadow a <a href="https://archive.canadianbusiness.com/blogs-and-comment/medias-influence-on-stock-market/market">market downturn</a> the next day ? 
 Like most other industries, the financial industry communicates by sharing information and data through the media. People speaking in the media express their emotions and opinions. They also consume media, and in the process are influenced by the sentiments, feelings, and opinions expressed by others. Scientific studies show that people are often influenced by the data they consume, and that their decisions or actions are partly aligned with it. 
 
-## What the Data Says
+### What the Data Says ?
 
 The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This **extensive** data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions** in the media, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
 
 The finance data we process is provided by the <a href="https://finance.yahoo.com/quote/AAPL/"> Yahoo Finance API </a> and allows us to recover informations about the Apple stock market since 2008. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
 
-We compare the Apple stock (*$AAPL*) to the S&P500 (*$SPY*) from 2008 until 2020, which is a stock market index tracking the performance of 500 largest companies listed on stock exchanges in the US. We have chosen this equity index as it is one of the most tracked indices and generally an indicator of the overall health of the US stock market.
+We study the liquidity traded for the Apple stock (*$AAPL*) between 2015 and 2019. Market liquidity depends on how much interest the public has in the particular asset in question. For example, Apple’s stock is much more liquid than the average tech company’s shares. The reason is that the business is well-known, with solid fundamentals, so investors often have a greater interest in it. In the graph below, the liquidity traded is displayed in blue (regular), and the top 2% of days per year for which the liquidity traded is maximal is displayed in red (volatile). We observe the same trend for the top 2% of days for maximal liquidity traded over the years. It seems that 4 to 6 times a year, a higher liquidity is traded and this is likely to correspond to Apple events in which the company announces release and information on each new product before it hits the market. This allows the consumer to build a demand for the product before it ever hits the shelf. 
+
+<div class="h_iframe" align="center" >
+    <iframe src="includes/liquidity.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
+</div>
+
+We then study the daily stock price for the Apple stock between 2015 and 2019. The stock price is steadily increasing since 2016. However, we notice some drops, particularly in January 2019 and in July 2019. We will try to provide interesting explanations for these drops using the media coverage of Apple in later analyses. (REF À METTRE)
+
+<div class="h_iframe" align="center" >
+    <iframe src="includes/stock_price.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
+</div>
+
+Finally, we have a look at the daily number of quotes related to Apple between 2015 and 2019. Here again, the daily number of quotes is displayed in blue, and the top 2% of the days for which the number of quotes related to Apple is maximal is displayed in red. In the same idea, similar trends are observed top 2% of days for maximal quotations of Apple over the years.
+
+<div class="h_iframe" align="center" >
+    <iframe src="includes/daily_quotes.html" frameborder="0" allowfullscreen style="width:100%; height:500px;overflow:auto;" ></iframe>
+</div>
+
+A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Are the top 2% of the days for which the liquidity traded is the highest correlated to the top 2% of days for which the quotations related to Apple are the highest ? 
+
 
 <a id='PreCurs'></a>
 
-## What We Can Learn From the Data
+### What We Can Learn From the Data ? 
 
 We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights and explore the data a little.
 
