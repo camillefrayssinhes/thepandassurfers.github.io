@@ -15,10 +15,10 @@ What is the role of the media coverage in explaining stock market fluctuations ?
 
 ### Why Apple ?
 
-{% include world_map_apple_stores.html %}
 
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, and Apple possesses stores around the world as can be seen below. If you zoom in you might even find the original Apple store at Tysons Corner in McLean, Virginia, USA ! 
 
+{% include world_map_apple_stores.html %}
 
 ### Where are we heading ?
 
