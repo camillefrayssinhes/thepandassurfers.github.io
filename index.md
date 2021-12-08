@@ -2,7 +2,7 @@
 title: Influence of the Media on Apple Stock Market
 layout: home
 ---
-## What is the media’s influence on stock market?  TEST
+## What is the media’s influence on stock market? 
 
 <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
 
@@ -14,7 +14,7 @@ What is the role of the media coverage in explaining stock market fluctuations ?
 
 
 {% include world_map_apple_stores.html %}
-`
+
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, and Apple possesses stores around the world as can be seen below. If you zoom in you might even find the original Apple store at Tysons Corner in McLean, Virginia, USA ! 
 
 
