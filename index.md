@@ -1,4 +1,7 @@
-
+---
+title: Influence of the Media on Apple Stock Market
+layout: home
+---
 ## What is the media’s influence on stock market?  TEST
 
 <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
