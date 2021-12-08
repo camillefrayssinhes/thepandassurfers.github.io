@@ -7,7 +7,7 @@ The project is accomplished by the team `ThePandaRiders` with members:
 
 - Raphaël Attias: [@raphaelattias](https://github.com/raphaelattias)
 - Camille Frayssinhes: [@camillefrayssinhes](https://github.com/camillefrayssinhes)
-- Baptiste Hernette: [@bapitou](https://github.com/Bapitou)
+- Baptiste Hernette: [@Bapitou](https://github.com/Bapitou)
 - Gaspard Villa: [@gaspardvilla](https://github.com/gaspardvilla)
 
 ### Abstract and research questions
