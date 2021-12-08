@@ -2,7 +2,7 @@
 title: Influence of the Media on Apple Stock Market
 layout: home
 ---
-## What is the media’s influence on stock market? 
+## What is the role of the media coverage in explaining stock market fluctuations ?
 
 <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
 
@@ -46,16 +46,30 @@ We then study the daily stock price for the Apple stock between 2015 and 2019. T
 
 {% include stock_price.html %}
 
-Finally, we have a look at the daily number of quotes related to Apple between 2015 and 2019. Here again, the daily number of quotes is displayed in blue, and the top 2% of the days for which the number of quotes related to Apple is maximal is displayed in red. In the same idea, similar trends are observed top 2% of days for maximal quotations of Apple over the years.
+## How does the media coverage of Apple evolve over time ?
+
+Thousands of events occur around the world every day, and humans notice only a small subset of these events. Yet, the media attract attention to specific events. In this regard, a company’s media visibility will definitely affect its stock price. Are there any specific patterns we can observe across the years, for instance bigger media coverage when there is the keynote ? 
+
+Let's investigate the relationships between the fluctuations of the stock market of Apple and the media coverage related to this company for a period of 5 years (2015–2019).
+
+We have a look at the daily number of quotes related to Apple between 2015 and 2019. Here again, the daily number of quotes is displayed in blue, and the top 2% of the days for which the number of quotes related to Apple is maximal is displayed in red. In the same idea, similar trends are observed top 2% of days for maximal quotations of Apple over the years.
 
 {% include daily_quotes.html %}
 
-A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Are the top 2% of the days for which the liquidity traded is the highest correlated to the top 2% of days for which the quotations related to Apple are the highest ? 
+A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Is the liquidity traded correlated to the quotations related to Apple ? Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media.
+....
+
+{% include daily_quotes_related_Apple_stock.html %}
+
+We can already make a few interesting observations.
+First, we see that .....
+We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We use the <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation coefficient </a>.
+....
 
 
 <a id='PreCurs'></a>
 
-### What We Can Learn From the Data ? 
+### What Can We Learn From the Data ? 
 
 We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights and explore the data a little.
 
