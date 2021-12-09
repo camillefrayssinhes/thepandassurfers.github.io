@@ -4,6 +4,6 @@ Personality plays a huge role in consumer buying behavior. Indeed, the high leve
 
 As an important next step to explore the impact of the speaker fame on the stock market, we need to subdivide the speakers into classes based on how much this person is notorious. 
 
-To achieve this, we use Wikipedia that has almost one page for every famous person. This allows us to identify the most similar sub-groupings of the speakers based on their Wikipedia page view statistics. We identified three different groupings for the different speakers : "*poorly influential*", "*moderately influential*", "*highly influential*". [À VOIR SI ON FAIT 2 CLASSES OU 3]
+To achieve this, we use Wikipedia that has almost one page for every famous person. This allows us to identify the most similar sub-groupings of the speakers based on their Wikipedia page view statistics. We identified three different groupings for the different speakers : "**poorly influential**", "**moderately influential**", "**highly influential**". [À VOIR SI ON FAIT 2 CLASSES OU 3]
 
 <a id='fame'></a>
