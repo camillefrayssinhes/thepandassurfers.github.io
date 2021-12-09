@@ -144,119 +144,123 @@
 
 				<!-- Six -->
 				
-							<h2>Meet the team !</h2>
-							<style>
-								/* Four columns side by side */
-								.column {
-								float: left;
-								width: 25%;
-								margin-bottom: 16px;
-								padding: 0 8px;
-								}
+				<h2>Meet the team !</h2>
+				<style>
+					/* Four columns side by side */
+					.column {
+					float: left;
+					width: 25%;
+					margin-bottom: 16px;
+					padding: 0 8px;
+					}
 
-								/* Display the columns below each other instead of side by side on small screens */
-								@media screen and (max-width: 650px) {
-								.column {
-									width: 100%;
-									display: block;
-								}
-								}
+					/* Display the columns below each other instead of side by side on small screens */
+					@media screen and (max-width: 650px) {
+					.column {
+						width: 100%;
+						display: block;
+					}
+					}
 
-								/* Add some shadows to create a card effect */
-								.card {
-								box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-								}
+					/* Add some shadows to create a card effect */
+					.card {
+					box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+					}
 
-								/* On mouse-over, add a deeper shadow */
-								.card:hover {
-								box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-								}
+					/* On mouse-over, add a deeper shadow */
+					.card:hover {
+					box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+					}
 
-								/* Some left and right padding inside the container */
-								.container {
-								padding: 0 16px;
-								}
+					/* Some left and right padding inside the container */
+					.container {
+					padding: 0 16px;
+					}
 
-								/* Clear floats */
-								.container::after, .row::after {
-								content: "";
-								clear: both;
-								display: table;
-								}
+					/* Clear floats */
+					.container::after, .row::after {
+					content: "";
+					clear: both;
+					display: table;
+					}
 
-								.title {
-								color: grey;
-								}
+					.title {
+					color: grey;
+					}
 
-								.button {
-								border: none;
-								outline: 0;
-								display: inline-block;
-								padding: 8px;
-								color: rgb(255, 255, 255);
-								background-color: rgb(255, 255, 255);
-								text-align: center;
-								cursor: pointer;
-								width: 100%;
-								}
+					.button {
+					border: none;
+					outline: 0;
+					display: inline-block;
+					padding: 8px;
+					color: rgb(255, 255, 255);
+					background-color: rgb(255, 255, 255);
+					text-align: center;
+					cursor: pointer;
+					width: 100%;
+					}
 
-								.button:hover {
-								background-color: rgb(175, 172, 172);
-								} 
-							</style>
-							<div class="row">
-								<div class="column">
-								  <div class="card">
-									<img src="images/Raph.jpg" alt="Raph" style="width:34%">
-									<div class="container">
-									  <h2>Raphaël Attias</h2>
-									  <p class="title">Data Sciences</p>
-									  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-									  <p>raphael.attias@epfl.ch</p>
-									  <p><button class="button">Contact</button></p>
-									</div>
-								  </div>
-								</div>
-							  
-								<div class="column">
-								  <div class="card">
-									<img src="img2.jpg" alt="Cam" style="width:100%">
-									<div class="container">
-									  <h2>Camille Frayssinhes</h2>
-									  <p class="title">Life Sciences</p>
-									  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-									  <p>camille.frayssinhes@epfl.ch</p>
-									  <p><button class="button">Contact</button></p>
-									</div>
-								  </div>
-								</div>
+					.button:hover {
+					background-color: rgb(175, 172, 172);
+					} 
+				</style>
+				<div class="row">
+					<div class="w3-card-4">
 
-								<div class="column">
-									<div class="card">
-									  <img src="img2.jpg" alt="Bapt" style="width:100%">
-									  <div class="container">
-										<h2>Baptiste Hernette</h2>
-										<p class="title">Mathematics</p>
-										<p>Some text that describes me lorem ipsum ipsum lorem.</p>
-										<p>baptiste.hernette@epfl.ch</p>
-										<p><button class="button">Contact</button></p>
-									  </div>
-									</div>
-								</div>
-							  
-								<div class="column">
-								  <div class="card">
-									<img src="img3.jpg" alt="Gasp" style="width:100%">
-									<div class="container">
-									  <h2>Gaspard Villa</h2>
-									  <p class="title">Mathematics</p>
-									  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-									  <p>gaspard.villa@epfl.ch</p>
-									  <p><button class="button">Contact</button></p>
-									</div>
-								  </div>
-								</div>
-							  </div> 
+						<header class="w3-container w3-light-grey">
+						  <h3>Raphaël Attias</h3>
+						</header>
+						
+						<div class="w3-container">
+						  <p>Data Sciences</p>
+						  <hr>
+						  <img src="Raph.jpg" alt="Avatar" class="w3-left w3-circle">
+						  <p>write something</p>
+						</div>
+						
+						<button class="w3-button w3-block w3-dark-grey">CONTACT</button>
+						
+						</div> 
+					
+					<div class="column">
+						<div class="card">
+						<img src="img2.jpg" alt="Cam" style="width:100%">
+						<div class="container">
+							<h2>Camille Frayssinhes</h2>
+							<p class="title">Life Sciences</p>
+							<p>Some text that describes me lorem ipsum ipsum lorem.</p>
+							<p>camille.frayssinhes@epfl.ch</p>
+							<p><button class="button">Contact</button></p>
+						</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="card">
+							<img src="img2.jpg" alt="Bapt" style="width:100%">
+							<div class="container">
+							<h2>Baptiste Hernette</h2>
+							<p class="title">Mathematics</p>
+							<p>Some text that describes me lorem ipsum ipsum lorem.</p>
+							<p>baptiste.hernette@epfl.ch</p>
+							<p><button class="button">Contact</button></p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="column">
+						<div class="card">
+						<img src="img3.jpg" alt="Gasp" style="width:100%">
+						<div class="container">
+							<h2>Gaspard Villa</h2>
+							<p class="title">Mathematics</p>
+							<p>Je pense donc je code.</p>
+							<p>gaspard.villa@epfl.ch</p>
+							<p><button class="button">Contact</button></p>
+						</div>
+						</div>
+					</div>
+					</div> 
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
