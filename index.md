@@ -62,12 +62,13 @@ For instance, at the beginning of 2016, we observe a significant peak of quotati
 
 A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Is the liquidity traded correlated to the quotations related to Apple ? We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights. Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media.
 For instance, we observe a stock price drop at the beginning of 2016 corresponding to the battle with the FBI, illustrating that Apple has more suffered from this debate rather than gained confidence from its customers.
-....
+...
 
 {% include daily_quotes_related_Apple_stock.html %}
 
-We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We use the <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation coefficient </a>.
-....
+We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We apply <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation </a> to identify if the correlation is statistically significant. The Pearson correlation coefficient is approximately 0.3 and the p-value is very small (p < 0.05). Even though the correlation is not very high, it is still non-negligible. In order to go deeper, we can divide the quotations into different categories according to the sentiments expressed (e.g. positive and negative). We would expect to see a stronger correlation coefficient between the number of positive quotations related to Apple and the liquidity traded for the Apple stock, and conversely a weaker correlation coefficient between the number of negative quotations related to Apple and the liquidity traded. 
+
+
 
 
 
