@@ -49,6 +49,8 @@ We then study the daily stock price for the Apple stock between 2015 and 2019. T
 
 Thousands of events occur around the world every day, and humans notice only a small subset of these events. Yet, the media attract attention to specific events. In this regard, a company’s media visibility will definitely affect its stock price. Are there any specific patterns we can observe across the years, for instance bigger media coverage when there is the keynote ? 
 
+<a id='PreCurs'></a>
+
 Let's investigate the relationships between the fluctuations of the stock market of Apple and the media coverage related to this company for a period of 5 years (2015–2019).
 
 We have a look at the daily number of quotes related to Apple between 2015 and 2019. Here again, the daily number of quotes is displayed in blue, and the top 2% of the days for which the number of quotes related to Apple is maximal is displayed in red. In the same idea, similar trends are observed top 2% of days for maximal quotations of Apple over the years.
@@ -57,7 +59,6 @@ For instance, at the beginning of 2016, we observe a significant peak of quotati
 
 {% include daily_quotes.html %}
 
-<a id='PreCurs'></a>
 
 ### What Can We Learn From the Data ? 
 
@@ -65,11 +66,12 @@ A question sprang to our attention during the analysis of this above plot and of
 For instance, we observe a stock price drop at the beginning of 2016 corresponding to the battle with the FBI, illustrating that Apple has more suffered from this debate rather than gained confidence from its customers.
 ...
 
+<a id='coverage'></a>
+
 {% include daily_quotes_related_Apple_stock.html %}
 
 We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We apply <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation </a> to identify if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.3</b> and the p-value is very small (p < 0.05). Hence, there is a <b>non-negligible positive correlation</b>. In order to go deeper, we can divide the quotations into different categories according to the sentiments expressed (e.g. positive and negative). We would expect to see a stronger correlation coefficient between the number of positive quotations related to Apple and the liquidity traded for the Apple stock, and conversely a weaker correlation coefficient between the number of negative quotations related to Apple and the liquidity traded. 
 
-<a id='coverage'></a>
 
 
 
