@@ -45,11 +45,12 @@ We then study the daily stock price for the Apple stock between 2015 and 2019. T
 
 {% include stock_price.html %}
 
+<a id='PreCurs'></a>
+
 ## How does the media coverage of Apple evolve over time ?
 
 Thousands of events occur around the world every day, and humans notice only a small subset of these events. Yet, the media attract attention to specific events. In this regard, a company’s media visibility will definitely affect its stock price. Are there any specific patterns we can observe across the years, for instance bigger media coverage when there is the keynote ? 
 
-<a id='PreCurs'></a>
 
 Let's investigate the relationships between the fluctuations of the stock market of Apple and the media coverage related to this company for a period of 5 years (2015–2019).
 
@@ -59,14 +60,13 @@ For instance, at the beginning of 2016, we observe a significant peak of quotati
 
 {% include daily_quotes.html %}
 
+<a id='coverage'></a>
 
 ### What Can We Learn From the Data ? 
 
 A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Is the liquidity traded correlated to the quotations related to Apple ? We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights. Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media.
 For instance, we observe a stock price drop at the beginning of 2016 corresponding to the battle with the FBI, illustrating that Apple has more suffered from this debate rather than gained confidence from its customers.
 ...
-
-<a id='coverage'></a>
 
 {% include daily_quotes_related_Apple_stock.html %}
 
