@@ -2640,7 +2640,9 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 1px #47D3E5;
 		color: #47D3E5;
 	}
-
+	.video-wrapper {position: relative; padding-bottom: 56.25%; /* 16:9 */  padding-top: 25px;}			
+	.video-wrapper iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	
 /* Image */
 
 	.image {
