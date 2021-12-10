@@ -19,9 +19,9 @@ Apple is an American multinational technology company that specializes in consum
 ### Where Are We Heading ?
 
 In order to provide the reader with a rough outline, we begin the story with a <a href='#PreCurs'>precursory look</a> into the data we have collected.
-This is accompanied by a look at the question <a href='#WhoIsTesco'>"How does the media coverage of Apple evolve over time ?"</a>.
-Following the initial overview, we develop our understanding of the data by <a href='#Londoners'>clustering the speakers</a> we consider according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers, which we use in later analyses. 
-Then we will go deeper by analyzing the correlation between the stock market movements and the <a href='#Londoners'>sentiments expressed</a> in the quotes. 
+This is accompanied by a look at the question <a href='#coverage'>"How does the media coverage of Apple evolve over time and how does it influence the Apple stock?"</a>.
+Following the initial overview, we develop our understanding of the data by analyzing the correlation between the stock market movements and the <a href='#sentiments'>sentiments expressed</a> in the quotes.
+Then we will go deeper by <a href='#fame'>clustering the speakers</a> according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers.
 
 
 ### Why Is This Important ? 
@@ -57,6 +57,8 @@ For instance, at the beginning of 2016, we observe a significant peak of quotati
 
 {% include daily_quotes.html %}
 
+<a id='PreCurs'></a>
+
 ### What Can We Learn From the Data ? 
 
 A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Is the liquidity traded correlated to the quotations related to Apple ? We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights. Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media.
@@ -67,7 +69,7 @@ For instance, we observe a stock price drop at the beginning of 2016 correspondi
 
 We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We apply <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation </a> to identify if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.3</b> and the p-value is very small (p < 0.05). Hence, there is a <b>non-negligible positive correlation</b>. In order to go deeper, we can divide the quotations into different categories according to the sentiments expressed (e.g. positive and negative). We would expect to see a stronger correlation coefficient between the number of positive quotations related to Apple and the liquidity traded for the Apple stock, and conversely a weaker correlation coefficient between the number of negative quotations related to Apple and the liquidity traded. 
 
-
+<a id='coverage'></a>
 
 
 
