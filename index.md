@@ -1,5 +1,4 @@
 ---
-title: What is the role of the media coverage in explaining stock market fluctuations ?
 layout: home
 ---
 
@@ -66,7 +65,7 @@ For instance, we observe a stock price drop at the beginning of 2016 correspondi
 
 {% include daily_quotes_related_Apple_stock.html %}
 
-We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We apply <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation </a> to identify if the correlation is statistically significant. The Pearson correlation coefficient is approximately 0.3 and the p-value is very small (p < 0.05). Even though the correlation is not very high, it is still non-negligible. In order to go deeper, we can divide the quotations into different categories according to the sentiments expressed (e.g. positive and negative). We would expect to see a stronger correlation coefficient between the number of positive quotations related to Apple and the liquidity traded for the Apple stock, and conversely a weaker correlation coefficient between the number of negative quotations related to Apple and the liquidity traded. 
+We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We apply <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation </a> to identify if the correlation is statistically significant. The Pearson correlation coefficient is approximately 0.3 and the p-value is very small (p < 0.05). Hence, there is a non-negligible positive correlation. In order to go deeper, we can divide the quotations into different categories according to the sentiments expressed (e.g. positive and negative). We would expect to see a stronger correlation coefficient between the number of positive quotations related to Apple and the liquidity traded for the Apple stock, and conversely a weaker correlation coefficient between the number of negative quotations related to Apple and the liquidity traded. 
 
 
 
