@@ -24,11 +24,26 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
+							<head>
+								<script>
+							(function newFact() {
+								var facts = ['Fact 1', 'Fact 2', 'Fact 183'];
+								var randomFact = Math.floor(Math.random() * facts.length);
+								document.getElementById('factDisplay').innerHTML = facts[randomFact];
+							})();
+								</script>
+							</head>
+							<div id="factDisplay"></div>
+
 							<h1>What is the role of the media coverage in explaining stock market fluctuations ?</h1>
 							<p class="major"><i>“The people who are crazy enough to think they can change the world are the ones who do.”</i> <b>Steve Jobs</b></p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button large wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
+
+							<!-- 
+							<body>
+								<input type='submit' value='🍎' onclick='getAnswer()' />
+								<div id='answerDiv'></div>
+							</body>
+							-->
 						</div>
 
 						<div class="image">
