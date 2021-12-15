@@ -2,3 +2,13 @@ For example, the **positive quotes** include: *"This team is unbelievable in cre
 The **negative quotes** include: *"What we found out during this investigation is Apple was losing tens of millions of dollars on this and people think oh Apple is a big company, they can handle it, well all those costs get passed on to the consumers"* by Michael Williams - a special agent for the Homeland Security Investigations, or *"How could Apple be so stupid to conceive of such a flop!"* by an anonymous speaker. 
 
 We can already observe in the above histograms that there are far more positive quotes related to Apple than negative or neutral quotes. How do these histograms correlate with the stock market ? 
+
+Let's first have a look at the correlation between the number of **positive quotations** related to Apple and the liquidity traded for the Apple stock. We again apply Pearson correlation to see if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.13</b> and the p-value is very small (p < 0.05). Below we look at the evolution of the Apple stock price in a joint relation of the number of positive quotations related to Apple in the media.
+AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
+
+{% include positive_quotes_related_Apple_stock.html %}
+
+Now, let's do the same analysis with the **negative quotations** related to Apple. As expected, <b>the Pearson correlation coefficient is only 0.05</b>, that is to say much lower than the one for positive quotations! Nevertheless, we must mention that the p-value for this coefficient is 0.059, so it's not statistically significant at the level 0.05. Again, we visualize in the plot below the evolution of the stock price with the number of negative quotations related to Apple. 
+AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
+
+{% include negative_quotes_related_Apple_stock.html %}
