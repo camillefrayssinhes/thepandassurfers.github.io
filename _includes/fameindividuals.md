@@ -16,3 +16,5 @@ Considering that we have only access to the Wikipedia page views since 2015, for
 ### What is the impact of the quotations according to the speaker's notoriety on the stock market? 
 
 Now, we have a fame score for each single quote. Let's see what is the impact of this fame score on the stock market? 
+
+{% include stock_price_against_quotes.html %}
