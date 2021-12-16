@@ -17,4 +17,4 @@ Considering that we have only access to the Wikipedia page views since 2015, for
 
 Now, we have a fame score for each single quote. Let's see what is the impact of this fame score on the stock market? 
 
-{% include stock_price_against_quotes.html %}
+{% include stock_price_against_quotes_score.html %}
