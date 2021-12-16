@@ -6,9 +6,7 @@ We can already observe in the above histograms that there are far more positive 
 Let's first have a look at the correlation between the number of **positive quotations** related to Apple and the liquidity traded for the Apple stock. We again apply Pearson correlation to see if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.13</b> and the p-value is very small (p < 0.05). Below we look at the evolution of the Apple stock price in a joint relation of the number of positive quotations related to Apple in the media.
 AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
 
-{% include positive_quotes_related_Apple_stock.html %}
-
-Now, let's do the same analysis with the **negative quotations** related to Apple. As expected, <b>the Pearson correlation coefficient is only 0.05</b>, that is to say much lower than the one for positive quotations! Nevertheless, we must mention that the p-value for this coefficient is 0.059, so it's not statistically significant at the level 0.05. Again, we visualize in the plot below the evolution of the stock price with the number of negative quotations related to Apple. 
+Let's do the same analysis with the **negative quotations** related to Apple. As expected, <b>the Pearson correlation coefficient is only 0.05</b>, that is to say much lower than the one for positive quotations! Nevertheless, we must mention that the p-value for this coefficient is 0.059, so it's not statistically significant at the level 0.05. Again, we visualize in the same plot below the evolution of the stock price with the number of negative quotations related to Apple. 
 AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
 
-{% include negative_quotes_related_Apple_stock.html %}
+{% include neg_pos_market.html %}

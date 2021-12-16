@@ -9,6 +9,6 @@ Media influences beliefs by providing compelling information about events. In th
 
 Understanding the author's opinion from a piece of text is the objective of sentiment analysis. Here, we classify quotes as **positive**, **negative** and **neutral** based on the sentiment present. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes ?
 
-Below, we display the distribution of the quotations from 2015 to 2020 according to their valence. 
+Below, we display the distribution of the quotations from 2008 to 2020 according to their valence. 
 
 
