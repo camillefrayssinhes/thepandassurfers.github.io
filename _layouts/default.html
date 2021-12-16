@@ -142,8 +142,8 @@
 					</section>
 
 					<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
+					<section class="wrapper style1 align-left">
+							<div class="inner">
 							{% capture my_include %}{% include fameindividuals.md %}{% endcapture %}
 							{{ my_include | markdownify }}
 							<div>
@@ -154,9 +154,6 @@
 							</div>					
 							{% capture my_include %}{% include fameindividuals2.md %}{% endcapture %}
 							{{ my_include | markdownify }}							
-						</div>
-						<div class="image">
-							<img src="images/wordcloud.jpg" alt="" />
 						</div>
 					</section>
 
