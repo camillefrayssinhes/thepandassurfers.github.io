@@ -122,46 +122,42 @@
 					<div class="inner">
 						{{ content }}
 					</div>
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							{% capture my_include %}{% include sentimentsquotes.md %}{% endcapture %}
-							{{ my_include | markdownify }}
-							<div>
-								<div style="position:relative;padding-top:56.25%;">
-									<iframe src="assets/all_quotes_sentiment.html" frameborder="0" allowfullscreen
-										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-								</div>
-							</div>					
-							{% capture my_include %}{% include sentimentsquotes2.md %}{% endcapture %}
-							{{ my_include | markdownify }}		
+				
+					<div class="content">
+						{% capture my_include %}{% include sentimentsquotes.md %}{% endcapture %}
+						{{ my_include | markdownify }}
+						<div>
+							<div style="position:relative;padding-top:56.25%;">
+								<iframe src="assets/all_quotes_sentiment.html" frameborder="0" allowfullscreen
+									style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 							</div>
-								<div style="position:relative;padding-top:56.25%;">
-									<iframe src="assets/neg_pos_market.html" frameborder="0" allowfullscreen
-										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-								</div>
-							</div>					
+						</div>					
+						{% capture my_include %}{% include sentimentsquotes2.md %}{% endcapture %}
+						{{ my_include | markdownify }}		
 						</div>
-					</section>
+							<div style="position:relative;padding-top:56.25%;">
+								<iframe src="assets/neg_pos_market.html" frameborder="0" allowfullscreen
+									style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+							</div>
+						</div>					
+					</div>
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content" >
-							{% capture my_include %}{% include fameindividuals.md %}{% endcapture %}
-							{{ my_include | markdownify }}
-							</div>
-								<div style="position:relative;padding-top:56.25%;">
-									<iframe src="assets/distribution_valence_fame.html" frameborder="0" allowfullscreen
-										style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-								</div>
-							</div>
-							{% capture my_include %}{% include fameindividuals2.md %}{% endcapture %}
-							{{ my_include | markdownify }}	
-						</div>	
-						<div class="image">
-							<img src="images/pic01.jpg" alt="" />
+					<div class="content" >
+						{% capture my_include %}{% include fameindividuals.md %}{% endcapture %}
+						{{ my_include | markdownify }}
 						</div>
-					</section>
+							<div style="position:relative;padding-top:56.25%;">
+								<iframe src="assets/distribution_valence_fame.html" frameborder="0" allowfullscreen
+									style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+							</div>
+						</div>
+						{% capture my_include %}{% include fameindividuals2.md %}{% endcapture %}
+						{{ my_include | markdownify }}	
+					</div>	
+					<div class="image">
+						<img src="images/pic01.jpg" alt="" />
+					</div>
+		
 
 					<center><h2>Meet the PandaRiders !</h2></center>
 						<!-- Gallery -->
