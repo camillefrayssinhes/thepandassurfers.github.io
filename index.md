@@ -32,6 +32,10 @@ Hence, what if the media would have an impact on the stock market ? For instance
 ### What the Data Says ?
 
 The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This **extensive** data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions** in the media, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
+
+Let's take a look at the filtered Quotebank dataset, which only describes Apple related quote. We highlight in red the yearly top 2% of days with the most quotes. We can already observe some patterns, that will be further dissected in the next sections. For example we observe a yearly spike in September when the new iPhone is released, or in June with the yearly developer conference. Most importantly **the highest spike the 6th October 2011 is related to Steve Jobs death**, which was widely covered in the media.
+
+{% include daily_quotes.html %}
  
 The finance data we process is provided by the <a href="https://www.yahoofinanceapi.com/"> Yahoo Finance API </a> and allows us to recover informations about the Apple stock market since 2008. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
 
@@ -69,6 +73,9 @@ For instance, we observe a stock price drop at the beginning of 2016 correspondi
 {% include daily_quotes_related_Apple_stock.html %}
 
 We can conjoin this information with further analyses regarding the correlation between the number of quotations related to Apple and the liquidity traded for the Apple stock. We apply <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation </a> to identify if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.3</b> and the p-value is very small (p < 0.05). Hence, there is a <b>non-negligible positive correlation</b>. In order to go deeper, we can divide the quotations into different categories according to the sentiments expressed (e.g. positive and negative). We would expect to see a stronger correlation coefficient between the number of positive quotations related to Apple and the liquidity traded for the Apple stock rather than between the number of negative quotations related to Apple and the liquidity traded. 
+
+
+From the above observations, we had the intuition that each quarter report released by Apple was synonymous with a day of high volatility. A quarterly report is a summary or collection of unaudited financial statements, such as  gross revenue, net profit, operational expenses, and cash flow. As we have 252 trading days in a year and 4 quarter reports per year, we expect a periodicity of high liquidity days of around 252/4 = 64 days. This in fact validated by the next analysis, which performs a seasonal analysis over a wide range of days period, and keep the days with the lowest null probability (i.e p-value). Later on we will see if this pattern is also observable on the Apple related quotes.
 
 
 {% include seasonal_analysis.html %}
