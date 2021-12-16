@@ -130,11 +130,15 @@ RAJOUTER PETITE PHRASE DE DESCRIPTION?
 {% include distribution_valence_fame.html %}
 
 
+
+
+
+
 ### What is the impact of the quotations according to the speaker's notoriety on the stock market? 
 
 Next, we give a **fame score** to the speakers based on their Wikipedia page view statistics. How to compute this fame score? We begin by normalizing the number of the speaker's Wikipedia page views at the year where the quote was published between 0 and 1. Then we multiply this number by +1 for positive quotes, -1 for negative quotes (and 0 for neutral quotes). Now, we have a fame score for each single quote. Let's try to see what is the impact of this fame score on the stock market? 
 
-In the following plot, we add all the positive and negative scores separately, and we plot them respectively with the stock price. The idea is two identify days for which a lot of famous people have talked about Apple positively or negatively. Indeed, if poorly influential people have talked about Apple, their score will be low and won't contribute a lot to the total score!
+In the following plot, we add all the positive and negative scores separately, and we plot them respectively with the stock price. The idea is to identify the days for which a lot of famous people have talked about Apple positively or negatively. Indeed, if poorly influential people have talked about Apple, their score will be low and won't contribute a lot to the total score!
 
 The significant peaks at the beginning of 2016 correspond to the FBI story. Unfortunately, the plot does not give us a lot of information about the correlation between the fame score and the stock market. We performed a statistical analysis and the Pearson correlation coefficient is ……… 
 RAJOUTER PEARSON CORR
@@ -142,6 +146,7 @@ RAJOUTER PEARSON CORR
 
 {% include stock_price_against_quotes_score.html %}
 
+TRANSITION
 
 <a id='model'></a>
 
