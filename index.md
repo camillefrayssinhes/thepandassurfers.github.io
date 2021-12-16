@@ -79,6 +79,73 @@ From the above observations, we had the intuition that each quarter report relea
 
 {% include seasonal_analysis.html %}
 
+<a id='sentiments'></a>
+
+## Can We Go Deeper?
+
+## What is the influence of the public opinions or emotions about Apple expressed in the media on the stock market ?
+
+
+Media influences beliefs by providing compelling information about events. In this regard, the media have been identified to play a significant role in shaping the consensus market opinion. Can a series of news articles make a stock rise? On the other hand, can it send a market into turmoil ? We hypothesize that emotions of the public in the media about a company would reflect in its stock price. Indeed, positive news about Apple would encourage people to invest in the stocks of the company. On the other hand, increases in expressions of anxiety, worry and fear would predict downward pressure on the stocks of the company. 
+
+Understanding the author's opinion from a piece of text is the objective of sentiment analysis. Here, we classify quotes as **positive**, **negative** and **neutral** based on the sentiment present. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes ?
+
+Below, we display the distribution of the quotations from 2008 to 2020 according to their valence. 
+
+{% include all_quotes_sentiment.html %}
+
+For example, the **positive quotes** include: *"This team is unbelievable in creating hardware and software and services and getting them all to work together"* by Tim Cook - the CEO of Apple -  or *"One reason I'm bullish on Apple is because Tim [ Cook ] is a very capable CEO. And he's one of the few people on the planet who I think is going to excel in an environment that has so many different business lines"* by Jon Porter, an American politician. 
+The **negative quotes** include: *"What we found out during this investigation is Apple was losing tens of millions of dollars on this and people think oh Apple is a big company, they can handle it, well all those costs get passed on to the consumers"* by Michael Williams - a special agent for the Homeland Security Investigations, or *"How could Apple be so stupid to conceive of such a flop!"* by an anonymous speaker. 
+
+We can already observe in the above histograms that there are far more positive quotes related to Apple than negative or neutral quotes. How do these histograms correlate with the stock market ? 
+
+Let's first have a look at the correlation between the number of **positive quotations** related to Apple and the liquidity traded for the Apple stock. We again apply Pearson correlation to see if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.13</b> and the p-value is very small (p < 0.05). Below we look at the evolution of the Apple stock price in a joint relation of the number of positive quotations related to Apple in the media.
+AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
+
+Let's do the same analysis with the **negative quotations** related to Apple. As expected, <b>the Pearson correlation coefficient is only 0.05</b>, that is to say much lower than the one for positive quotations! Nevertheless, we must mention that the p-value for this coefficient is 0.059, so it's not statistically significant at the level 0.05. Again, we visualize in the same plot below the evolution of the stock price with the number of negative quotations related to Apple. 
+AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
+
+{% include neg_pos_market.html %}
+
+<a id='fame'></a>
+
+## Who are the individuals who have influence over potential customers, and do these influencers have an impact on the Apple company image and eventually, on the stock market ?
+
+
+In the precedent section, we have looked at the influence of the author’s opinion from the different quotes of our data set on the stock market. But yet, we still miss an important piece of information. Indeed, if the previous president of the United States Donald Trump shares his opinion about Apple and if a random postman shares his opinion, it won't likely have the same effect. Thus: what is the impact of the speaker on the stock market? The response is relatively simple, it depends on how well known the speaker was at the time he or she was quoted in the media. And a quite simple way to have that indicators is the number of pageviews on then speakers' Wikipedia page (if there is one !).
+
+The reason why we look at the fame of the speaker is that **personality plays a huge role in consumer buying behavior**. Indeed, the high level of public attention and the positive emotional responses that define celebrity increase the economic opportunities available to a firm. We hypothesize that quotes from celebrities significantly impact the stock market, whereas quotes from ordinary people have no significant predictive power. One defining characteristic of a celebrity is that it is a social actor who attracts large-scale public attention : the greater the number of people who know of and pay attention to the actor, the greater the extent and value of that celebrity.
+
+As an important next step to explore the impact of the speaker fame on the stock market, we need to find a metric to identify how much a speaker is notorious. Are the different speakers poorly influential, moderately influential or highly influential? 
+
+To achieve this, we use Wikipedia that has almost one page for every famous person. This allows us to give a **fame score** to the speakers based on their Wikipedia page view statistics. The fame score corresponds to the number of the speaker's Wikipedia page views at the year where the quote was published, normalized between 0 and 1.
+
+Considering that we have only access to the Wikipedia page views since 2015, for this part we focus our analysis on the quotations between 2015 and 2020. 
+
+### What is the impact of the quotations according to the speaker's notoriety on the stock market? 
+
+Now, we have a fame score for each single quote. Let's see what is the impact of this fame score on the stock market? 
+
+{% include stock_price_against_quotes_score.html %}
+
+{% include distribution_valence_fame.html %}
+
+<a id='model'></a>
+
+## How rich would you get if you developed a way to accurately predict the stock market?
+
+### The holy grail of day traders… building a model for stock market prediction
+
+After the basic analysis, we attempt to train a machine learning model to predict the daily stock price using the quotes related to Apple, speakers data and past stock performance. The model is a modular linear regression model, that can take into account past performance and additional factors. The model is trained on data from 2015 to 2017 and predict the daily stock price in 2018.
+The resulting regression model did not perform well to predict the stock price during the first semester of 2018. However, it is quite effective in predicting the stock price during the last semester of 2018. Especially, it has well predicted the little drop in the stock price in June 2018! 
+
+RAJOUTER 2/3 MOTS
+
+{% include future_stock_prediction.html %}
+
+
+QQ MOTS DE CONCLUSION
+
 
 
 
