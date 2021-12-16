@@ -8,5 +8,3 @@ AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
 
 Let's do the same analysis with the **negative quotations** related to Apple. As expected, <b>the Pearson correlation coefficient is only 0.05</b>, that is to say much lower than the one for positive quotations! Nevertheless, we must mention that the p-value for this coefficient is 0.059, so it's not statistically significant at the level 0.05. Again, we visualize in the same plot below the evolution of the stock price with the number of negative quotations related to Apple. 
 AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
-
-{% include neg_pos_market.html %}
