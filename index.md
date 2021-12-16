@@ -6,15 +6,15 @@ layout: home
 
 In the following, we want to investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. We explore the Quotebank data set and filter out any quotes that are not related to the company, the products or its direction board. We then combine it with informations on Apple stock market, collected with the Yahoo Finance API.
 
-What is the role of the media coverage in explaining stock market fluctuations ? Firstly, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ? Then, we will examine who are the individuals who have influence over potential customers. Do these influencers have an impact on the company image and eventually, on the stock market ? The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.
+What is the role of the media coverage in explaining stock market fluctuations? Firstly, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market? Then, we will examine who are the individuals who have influence over potential customers. Do these influencers have an impact on the company image and eventually, on the stock market? The aim is to obtain insights on the interplay between the media coverage and the Apple stock market fluctuations.
 
-### Why Apple ?
+### Why Apple?
 {% include world_map_apple_stores.html %}
 
 Apple is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue (totaling $274.5 billion in 2020) and, since January 2021, the world's most valuable company. It is one of the Big Five American information technology companies, alongside Amazon, Google, Facebook, and Microsoft. Today, it is widely spread all over the world, and Apple possesses stores around the world as can be seen below. If you zoom in you might even find the original Apple store at Tysons Corner in McLean, Virginia, USA ! 
 
 
-### Where Are We Heading ?
+### Where Are We Heading?
 
 In order to provide the reader with a rough outline, we begin the story with a <a href='#PreCurs'>precursory look</a> into the data we have collected.
 This is accompanied by a look at the question <a href='#coverage'>"How does the media coverage of Apple evolve over time and how does it influence the Apple stock?"</a>.
@@ -22,14 +22,14 @@ Following the initial overview, we develop our understanding of the data by anal
 Then we will go deeper by <a href='#fame'>giving a weight to the speakers</a> according to the Wikipedia page view statistics per year. This allows us to classify them as having a significant influence or a low influence over potential customers.
 
 
-### Why Is This Important ? 
+### Why Is This Important? 
 
 Accurately predicting the stock markets is a complex task as there are millions of events and pre-conditions for a particular stock to move in a particular direction. 
 Like most other industries, the financial industry communicates by sharing information and data through the media. People speaking in the media express their emotions and opinions. They also consume media, and in the process are influenced by the sentiments, feelings, and opinions expressed by others. Scientific studies show that people are often influenced by the data they consume, and that their decisions or actions are partly aligned with it. 
-Hence, what if the media would have an impact on the stock market ? For instance, what if a rise in the number of pessimistic words in the market column of a journal would foreshadow a <a href="https://archive.canadianbusiness.com/blogs-and-comment/medias-influence-on-stock-market/market">market downturn</a> the next day ? 
+Hence, **what if the media would have an impact on the stock market?** For instance, what if a rise in the number of pessimistic words in the market column of a journal would foreshadow a market downturn the next day? 
 
 
-### What the Data Says ?
+### What the Data Says?
 
 The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This **extensive** data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions** in the media, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
 
@@ -51,24 +51,24 @@ We then study the daily stock price for the Apple stock between 2015 and 2019. T
 
 <a id='PreCurs'></a>
 
-## How does the media coverage of Apple evolve over time ?
+## How does the media coverage of Apple evolve over time?
 
-Thousands of events occur around the world every day, and humans notice only a small subset of these events. Yet, the media attract attention to specific events. In this regard, a company’s media visibility will definitely affect its stock price. Are there any specific patterns we can observe across the years, for instance bigger media coverage when there is the keynote ? 
+Thousands of events occur around the world every day, and humans notice only a small subset of these events. Yet, the media attract attention to specific events. In this regard, a company’s media visibility will definitely affect its stock price. Are there any specific patterns we can observe across the years, for instance bigger media coverage when there is the keynote? 
 
 
 Let's investigate the relationships between the fluctuations of the stock market of Apple and the media coverage related to this company for a period of 5 years (2015–2019).
 
 We have a look at the daily number of quotes related to Apple between 2015 and 2019. Here again, the daily number of quotes is displayed in blue, and the top 2% of the days for which the number of quotes related to Apple is maximal is displayed in red. In the same idea, similar trends are observed top 2% of days for maximal quotations of Apple over the years.
 We can already make a few interesting observations.
-For instance, at the beginning of 2016, we observe a significant peak of quotations. What happened at this date ? Apple has become embroiled in a very <a href="https://www.nasdaq.com/articles/will-apple-inc.-aapl-stock-feel-a-bite-from-the-fbi-2016-02-23"> public battle with the FBI </a> over whether or not the tech firm should unlock an iPhone used by one of the shooters in the San Bernardino terror attacks. The media had a field day ! This debate could have gone either way for the Apple stock. On the one hand, the media could have highlighted Apple's refusal to design a program to unlock iPhones underscores the company's hardline against violating customer privacy, and this likely gave customers another reason to choose Apple products. On the other hand, the media could have shifted the narrative and painted Apple in a negative light for obstructing an investigation into a terror plot, and this could have severely affected the Apple stock.
+For instance, at the beginning of 2016, we observe a significant peak of quotations. What happened at this date? Apple has become embroiled in a very <a href="https://www.nasdaq.com/articles/will-apple-inc.-aapl-stock-feel-a-bite-from-the-fbi-2016-02-23"> public battle with the FBI </a> over whether or not the tech firm should unlock an iPhone used by one of the shooters in the San Bernardino terror attacks. The media had a field day ! This debate could have gone either way for the Apple stock. On the one hand, the media could have highlighted Apple's refusal to design a program to unlock iPhones underscores the company's hardline against violating customer privacy, and this likely gave customers another reason to choose Apple products. On the other hand, the media could have shifted the narrative and painted Apple in a negative light for obstructing an investigation into a terror plot, and this could have severely affected the Apple stock.
 
 
 
 <a id='coverage'></a>
 
-### What Can We Learn From the Data ? 
+### What Can We Learn From the Data? 
 
-A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Is the liquidity traded correlated to the quotations related to Apple ? We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights. Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media.
+A question sprang to our attention during the analysis of this above plot and of the one displaying the liquidity traded for the Apple stock. Is the liquidity traded correlated to the quotations related to Apple? We start with some precursory data visualization and statistical analysis to provide a feeling for the data we are working with and to present some first insights. Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media.
 For instance, we observe a stock price drop at the beginning of 2016 corresponding to the battle with the FBI, illustrating that Apple has more suffered from this debate rather than gained confidence from its customers.
 ...
 
@@ -88,9 +88,9 @@ From the above observations, we had the intuition that each quarter report relea
 ## What is the influence of the public opinions or emotions about Apple expressed in the media on the stock market ?
 
 
-Media influences beliefs by providing compelling information about events. In this regard, the media have been identified to play a significant role in shaping the consensus market opinion. Can a series of news articles make a stock rise? On the other hand, can it send a market into turmoil ? We hypothesize that emotions of the public in the media about a company would reflect in its stock price. Indeed, positive news about Apple would encourage people to invest in the stocks of the company. On the other hand, increases in expressions of anxiety, worry and fear would predict downward pressure on the stocks of the company. 
+Media influences beliefs by providing compelling information about events. In this regard, the media have been identified to play a significant role in shaping the consensus market opinion. Can a series of news articles make a stock rise? On the other hand, can it send a market into turmoil? We hypothesize that emotions of the public in the media about a company would reflect in its stock price. Indeed, positive news about Apple would encourage people to invest in the stocks of the company. On the other hand, increases in expressions of anxiety, worry and fear would predict downward pressure on the stocks of the company. 
 
-Understanding the author's opinion from a piece of text is the objective of sentiment analysis. Here, **we classify quotes as positive, negative and neutral based on the sentiment present**. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes ?
+Understanding the author's opinion from a piece of text is the objective of sentiment analysis. Here, **we classify quotes as positive, negative and neutral based on the sentiment present**. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes?
 
 Below, we display the distribution of the quotations from 2008 to 2020 according to their valence. 
 
@@ -99,7 +99,7 @@ Below, we display the distribution of the quotations from 2008 to 2020 according
 For example, the **positive quotes** include: *"This team is unbelievable in creating hardware and software and services and getting them all to work together"* by Tim Cook - the CEO of Apple -  or *"One reason I'm bullish on Apple is because Tim [ Cook ] is a very capable CEO. And he's one of the few people on the planet who I think is going to excel in an environment that has so many different business lines"* by Jon Porter, an American politician. 
 The **negative quotes** include: *"What we found out during this investigation is Apple was losing tens of millions of dollars on this and people think oh Apple is a big company, they can handle it, well all those costs get passed on to the consumers"* by Michael Williams - a special agent for the Homeland Security Investigations, or *"How could Apple be so stupid to conceive of such a flop!"* by an anonymous speaker. 
 
-We can already observe in the above histograms that there are far more positive quotes related to Apple than negative or neutral quotes. How do these histograms correlate with the stock market ? 
+We can already observe in the above histograms that there are far more positive quotes related to Apple than negative or neutral quotes. How do these histograms correlate with the stock market? 
 
 Let's first have a look at the correlation between the number of **positive quotations** related to Apple and the liquidity traded for the Apple stock. We again apply Pearson correlation to see if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.13</b> and the p-value is very small (p < 0.05). Below we look at the evolution of the Apple stock price in a joint relation of the number of positive quotations related to Apple in the media.
 AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
@@ -113,7 +113,7 @@ AJOUTER TRANSITION PARTIE 2
 
 <a id='fame'></a>
 
-## Who are the individuals who have influence over potential customers, and do these influencers have an impact on the Apple company image and eventually, on the stock market ?
+## Who are the individuals who have influence over potential customers, and do these influencers have an impact on the Apple company image and eventually, on the stock market?
 
 
 In the precedent section, we have looked at the influence of the author’s opinion from the different quotes of our data set on the stock market. But yet, we still miss an important piece of information. Indeed, if the previous president of the United States Donald Trump shares his opinion about Apple and if a random postman shares his opinion, it won't likely have the same effect. Thus: what is the impact of the speaker on the stock market? The response is relatively simple, it depends on **how well known the speaker was at the time he or she was quoted in the media.** And a quite simple way to have that indicators is the number of pageviews on then speakers' Wikipedia page (if there is one !).
@@ -124,8 +124,7 @@ Therefore, we speculate that not only the sentiment expressed in the quote, but 
 
 As an important next step to explore the impact of the speaker fame on the stock market in combination to the valence of the quotations, we need to find a metric to identify how much a speaker is notorious. Are the different speakers poorly influential, moderately influential or highly influential? To achieve this, we use Wikipedia that has almost one page for every famous person. We hypothesize that **the higher the Wikipedia page view statistics, the more notoriety the speaker has**. Considering that we have only access to the Wikipedia page views since 2015, for this part we focus our analysis on the quotations released between 2015 and 2020. 
 
-In the following plot, we have chosen 6 events which were higly mediatized between 2015 and 2020 (the major events picked up from the 2% in <a href='#quotesplot'>this</a> plot). Quotations were plotted according to their valence and to the fame of their speaker. 
-RAJOUTER PETITE PHRASE DE DESCRIPTION? 
+In the following plot, we have chosen 6 events which were highly mediatized between 2015 and 2020. We chose 6 major events picked up from the 2% in <a href='#quotesplot'>this plot</a> for which we were able to find relevant thematic associated e.g. the "FBI-Apple encryption dispute", "Release of the iPhone X", etc. Quotations were plotted according to their valence and to the fame of their speaker. 
 
 {% include distribution_valence_fame.html %}
 
