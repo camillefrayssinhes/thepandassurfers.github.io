@@ -31,9 +31,9 @@ Hence, **what if the media would have an impact on the stock market?** For insta
 
 ### What the Data Says?
 
-The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This **extensive** data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions** in the media, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
+The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This extensive data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions in the media**, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
 
-Let's take a look at the filtered Quotebank dataset, which only describes Apple related quote. We highlight in red the yearly top 2% of days with the most quotes. We can already observe some patterns, that will be further dissected in the next sections. For example we observe a yearly spike in September when the new iPhone is released, or in June with the yearly developer conference. Most importantly **the highest spike the 6th October 2011 is related to Steve Jobs death**, which was widely covered in the media.
+We have a look at the daily number of quotes related to Apple between 2008 and 2020. We highlight in red the yearly top 2% of days with the most quotes. We can already make a few interesting observations. Indeed, we can observe some patterns, that will be further dissected in the next sections. For example we observe a yearly spike in September when the new iPhone is released, or in June with the yearly developer conference. Most importantly **the highest spike the 6th October 2011 is related to Steve Jobs death**, which was widely covered in the media. 
 
 <a id='quotesplot'></a>
 
@@ -41,11 +41,11 @@ Let's take a look at the filtered Quotebank dataset, which only describes Apple 
  
 The finance data we process is provided by the <a href="https://www.yahoofinanceapi.com/"> Yahoo Finance API </a> and allows us to recover informations about the Apple stock market since 2008. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
 
-We study the liquidity traded for the Apple stock (*$AAPL*) between 2015 and 2019. Market liquidity depends on how much interest the public has in the particular asset in question. For example, Apple’s stock is much more liquid than the average tech company’s shares. The reason is that the business is well-known, with solid fundamentals, so investors often have a greater interest in it. In the graph below, the liquidity traded is displayed in blue (regular), and the top 2% of days per year for which the liquidity traded is maximal is displayed in red (volatile). We observe the same trend for the top 2% of days for maximal liquidity traded over the years. It seems that 4 to 6 times a year, a higher liquidity is traded and this is likely to correspond to Apple events in which the company announces release and information on each new product before it hits the market. This allows the consumer to build a demand for the product before it ever hits the shelf. 
+We study the liquidity traded for the Apple stock (*$AAPL*) between 2015 and 2019. Market liquidity depends on how much interest the public has in the particular asset in question. For example, Apple’s stock is much more liquid than the average tech company’s shares. The reason is that the business is well-known, with solid fundamentals, so investors often have a greater interest in it. In the graph below, the liquidity traded is displayed in blue (regular), and the top 2% of days per year for which the liquidity traded is maximal is displayed in red (volatile). We observe the same trend for the top 2% of days for maximal liquidity traded over the years. It seems that **4 to 6 times a year, a higher liquidity is traded and this is likely to correspond to Apple events in which the company announces release and information on each new product before it hits the market.** This allows the consumer to build a demand for the product before it ever hits the shelf. 
 
 {% include liquidity.html %}
 
-We then study the daily stock price for the Apple stock between 2015 and 2019. The stock price is steadily increasing since 2016. However, we notice some drops, particularly in January 2019 and in July 2019. We will try to provide interesting explanations for these drops using the media coverage of Apple in later analyses. (REF À METTRE)
+We then study the daily stock price for the Apple stock between 2015 and 2019. The stock price is steadily increasing since 2016. However, we notice some drops, particularly in January 2019 and in July 2019. We will try to provide interesting explanations for these drops using the media coverage of Apple in later analyses.
 
 {% include stock_price.html %}
 
@@ -53,10 +53,10 @@ We then study the daily stock price for the Apple stock between 2015 and 2019. T
 
 ## How does the media coverage of Apple evolve over time?
 
-Thousands of events occur around the world every day, and humans notice only a small subset of these events. Yet, the media attract attention to specific events. In this regard, a company’s media visibility will definitely affect its stock price. Are there any specific patterns we can observe across the years, for instance bigger media coverage when there is the keynote? 
+Thousands of events occur around the world every day, and humans notice only a small subset of these events. Yet, the media attract attention to specific events. In this regard, **a company’s media visibility will definitely affect its stock price.** Are there any specific patterns we can observe across the years, for instance bigger media coverage when there is the keynote? 
 
 
-Let's investigate the relationships between the fluctuations of the stock market of Apple and the media coverage related to this company for a period of 5 years (2015–2019).
+Let's investigate the **relationship between the fluctuations of the stock market of Apple and the media coverage related to this company** for a period of 13 years (2008–2020).
 
 We have a look at the daily number of quotes related to Apple between 2015 and 2019. Here again, the daily number of quotes is displayed in blue, and the top 2% of the days for which the number of quotes related to Apple is maximal is displayed in red. In the same idea, similar trends are observed top 2% of days for maximal quotations of Apple over the years.
 We can already make a few interesting observations.
@@ -139,7 +139,9 @@ Next, we give a **fame score** to the speakers based on their Wikipedia page vie
 
 In the following plot, we add all the positive and negative scores separately, and we plot them respectively with the stock price. The idea is to identify the days for which a lot of famous people have talked about Apple positively or negatively. Indeed, if poorly influential people have talked about Apple, their score will be low and won't contribute a lot to the total score!
 
-The significant peaks at the beginning of 2016 correspond to the FBI story. Unfortunately, the plot does not give us a lot of information about the correlation between the fame score and the stock market. We performed a statistical analysis and the Pearson correlation coefficient is ……… 
+The significant peak at the beginning of 2016 corresponds to the FBI story. What happened at this date? Apple has become embroiled in a very <a href="https://www.nasdaq.com/articles/will-apple-inc.-aapl-stock-feel-a-bite-from-the-fbi-2016-02-23"> public battle with the FBI </a> over whether or not the tech firm should unlock an iPhone used by one of the shooters in the San Bernardino terror attacks. The media had a field day ! This debate could have gone either way for the Apple stock. On the one hand, the media could have highlighted Apple's refusal to design a program to unlock iPhones underscores the company's hardline against violating customer privacy, and this likely gave customers another reason to choose Apple products. On the other hand, the media could have shifted the narrative and painted Apple in a negative light for obstructing an investigation into a terror plot, and this could have severely affected the Apple stock.
+
+Unfortunately, the plot does not give us a lot of information about the correlation between the fame score and the stock market. We performed a statistical analysis and the Pearson correlation coefficient is ……… 
 RAJOUTER PEARSON CORR
 
 
