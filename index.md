@@ -35,6 +35,8 @@ The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank
 
 Let's take a look at the filtered Quotebank dataset, which only describes Apple related quote. We highlight in red the yearly top 2% of days with the most quotes. We can already observe some patterns, that will be further dissected in the next sections. For example we observe a yearly spike in September when the new iPhone is released, or in June with the yearly developer conference. Most importantly **the highest spike the 6th October 2011 is related to Steve Jobs death**, which was widely covered in the media.
 
+<a id='quotesplot'></a>
+
 {% include daily_quotes.html %}
  
 The finance data we process is provided by the <a href="https://www.yahoofinanceapi.com/"> Yahoo Finance API </a> and allows us to recover informations about the Apple stock market since 2008. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
@@ -88,7 +90,7 @@ From the above observations, we had the intuition that each quarter report relea
 
 Media influences beliefs by providing compelling information about events. In this regard, the media have been identified to play a significant role in shaping the consensus market opinion. Can a series of news articles make a stock rise? On the other hand, can it send a market into turmoil ? We hypothesize that emotions of the public in the media about a company would reflect in its stock price. Indeed, positive news about Apple would encourage people to invest in the stocks of the company. On the other hand, increases in expressions of anxiety, worry and fear would predict downward pressure on the stocks of the company. 
 
-Understanding the author's opinion from a piece of text is the objective of sentiment analysis. Here, we classify quotes as **positive**, **negative** and **neutral** based on the sentiment present. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes ?
+Understanding the author's opinion from a piece of text is the objective of sentiment analysis. Here, **we classify quotes as positive, negative and neutral based on the sentiment present**. We want to answer the following questions : are the stock price drops/rises correlated with negative/positive quotes ?
 
 Below, we display the distribution of the quotations from 2008 to 2020 according to their valence. 
 
@@ -107,28 +109,39 @@ AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
 
 {% include neg_pos_market.html %}
 
+AJOUTER TRANSITION PARTIE 2
+
 <a id='fame'></a>
 
 ## Who are the individuals who have influence over potential customers, and do these influencers have an impact on the Apple company image and eventually, on the stock market ?
 
 
-In the precedent section, we have looked at the influence of the author’s opinion from the different quotes of our data set on the stock market. But yet, we still miss an important piece of information. Indeed, if the previous president of the United States Donald Trump shares his opinion about Apple and if a random postman shares his opinion, it won't likely have the same effect. Thus: what is the impact of the speaker on the stock market? The response is relatively simple, it depends on how well known the speaker was at the time he or she was quoted in the media. And a quite simple way to have that indicators is the number of pageviews on then speakers' Wikipedia page (if there is one !).
+In the precedent section, we have looked at the influence of the author’s opinion from the different quotes of our data set on the stock market. But yet, we still miss an important piece of information. Indeed, if the previous president of the United States Donald Trump shares his opinion about Apple and if a random postman shares his opinion, it won't likely have the same effect. Thus: what is the impact of the speaker on the stock market? The response is relatively simple, it depends on **how well known the speaker was at the time he or she was quoted in the media.** And a quite simple way to have that indicators is the number of pageviews on then speakers' Wikipedia page (if there is one !).
 
 The reason why we look at the fame of the speaker is that **personality plays a huge role in consumer buying behavior**. Indeed, the high level of public attention and the positive emotional responses that define celebrity increase the economic opportunities available to a firm. We hypothesize that quotes from celebrities significantly impact the stock market, whereas quotes from ordinary people have no significant predictive power. One defining characteristic of a celebrity is that it is a social actor who attracts large-scale public attention : the greater the number of people who know of and pay attention to the actor, the greater the extent and value of that celebrity.
 
-As an important next step to explore the impact of the speaker fame on the stock market, we need to find a metric to identify how much a speaker is notorious. Are the different speakers poorly influential, moderately influential or highly influential? 
+Therefore, we speculate that not only the sentiment expressed in the quote, but also the fame of the speaker both have an influence on the Apple stock market. 
 
-To achieve this, we use Wikipedia that has almost one page for every famous person. This allows us to give a **fame score** to the speakers based on their Wikipedia page view statistics. The fame score corresponds to the number of the speaker's Wikipedia page views at the year where the quote was published, normalized between 0 and 1.
+As an important next step to explore the impact of the speaker fame on the stock market in combination to the valence of the quotations, we need to find a metric to identify how much a speaker is notorious. Are the different speakers poorly influential, moderately influential or highly influential? To achieve this, we use Wikipedia that has almost one page for every famous person. We hypothesize that **the higher the Wikipedia page view statistics, the more notoriety the speaker has**. Considering that we have only access to the Wikipedia page views since 2015, for this part we focus our analysis on the quotations released between 2015 and 2020. 
 
-Considering that we have only access to the Wikipedia page views since 2015, for this part we focus our analysis on the quotations between 2015 and 2020. 
+In the following plot, we have chosen 6 events which were higly mediatized between 2015 and 2020 (the major events picked up from the 2% in <a href='#quotesplot'>this</a> plot). Quotations were plotted according to their valence and to the fame of their speaker. 
+RAJOUTER PETITE PHRASE DE DESCRIPTION? 
+
+{% include distribution_valence_fame.html %}
+
 
 ### What is the impact of the quotations according to the speaker's notoriety on the stock market? 
 
-Now, we have a fame score for each single quote. Let's see what is the impact of this fame score on the stock market? 
+Next, we give a **fame score** to the speakers based on their Wikipedia page view statistics. How to compute this fame score? We begin by normalizing the number of the speaker's Wikipedia page views at the year where the quote was published between 0 and 1. Then we multiply this number by +1 for positive quotes, -1 for negative quotes (and 0 for neutral quotes). Now, we have a fame score for each single quote. Let's try to see what is the impact of this fame score on the stock market? 
+
+In the following plot, we add all the positive and negative scores separately, and we plot them respectively with the stock price. The idea is two identify days for which a lot of famous people have talked about Apple positively or negatively. Indeed, if poorly influential people have talked about Apple, their score will be low and won't contribute a lot to the total score!
+
+The significant peaks at the beginning of 2016 correspond to the FBI story. Unfortunately, the plot does not give us a lot of information about the correlation between the fame score and the stock market. We performed a statistical analysis and the Pearson correlation coefficient is ……… 
+RAJOUTER PEARSON CORR
+
 
 {% include stock_price_against_quotes_score.html %}
 
-{% include distribution_valence_fame.html %}
 
 <a id='model'></a>
 
