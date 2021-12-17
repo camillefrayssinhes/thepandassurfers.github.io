@@ -1,6 +1,6 @@
 # Influence of the Media on Apple Stock Market
 
-[To the data story](https://camillefrayssinhes.github.io/thepandassurfers.github.io/)
+To the data story [www.thepandariders.com](www.thepandariders.com)
 
 ### Team members
 The project is accomplished by the team `ThePandaRiders` with members:
@@ -10,30 +10,16 @@ The project is accomplished by the team `ThePandaRiders` with members:
 - Baptiste Hernette: [@Bapitou](https://github.com/Bapitou)
 - Gaspard Villa: [@gaspardvilla](https://github.com/gaspardvilla)
 
-### Abstract and research questions
+***
+### Web and theme Engine: 
+On top of the Github Pages framework we use the Jekyll engine, which is a flexible and accessible static website engine. It allowed us to easily write our report into a markdown file, import the figures generated in html by plotly and customize the design as we liked.
 
-Apple has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. In this project, we aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company. Firstly, we will wonder what is the role of the media coverage in explaining stock market fluctuations ? Then, we will examine who are the individuals who have influence over potential customers, and do these influencers have an impact on the company image and eventually, on the stock market ? Eventually, we will ask what is the influence of the people's opinions about Apple expressed in the media on the stock market ?
+Furthermore Jekyll supports not only a variety of Jekyll ready themes, but also any modern HTML5 themes. We used the *Story* theme provided by [HTML5UP](https://html5up.net/story), that we then converted to a supported Jekyll theme. This theme provide a wide range of sections, widgets and buttons that made customization easy. 
 
 ***
-### Data sets used : 
-* `Quotebank DataSet` : To investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company, we study mentions of Apple using time series analysis. We filter out any quotes that are not related to the company, the products or its direction board. The filtered dataset is then saved as a pickle file containing approximately 300.000 quotes out of the original 234 millions. This new dataset provides a great preview of Apple mentions in the media. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
-* `Wikipedia API` : We use the Wikipedia API to recover informations about the speakers. We will classify them as having a significant influence or a low influence over potential customers based on the Wikipedia page view statistics per year. The idea is to get all the Wiki qids speakers that have have spoken in our filtered quotes dataset. Then, with the Wikipedia API, we would get all the needed informations about the speakers.
-* `Yahoo Finance API` : Eventually, we use the Yahoo Finance API to recover informations about the stock markets. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience. In this milestone we compare the Apple stock ($AAPL) to the S&P500 ($SPY) from 2008 until 2020, which is is a stock market index tracking the performance of 500 large companies listed on stock exchanges in the US. We have chosen this equity index as it is one of the most tracked indices and generally an indicator of the overall health of the US stock market.
+
+### Content and figures
+
+Jekyll natively supports markdown files as the primary source of content. The full text and story is contained in ```index.md```, which is a standard handwritten markdown file. The plotly figures are already rendered and imported from ```_includes/```. 
 
 ***
-### Methods : 
-* **Method to classify the fame of people annually :** For the subtask 2, we classify people as having a significant influence or a low influence over potential customers based on the Wikipedia page view statistics per year. We set the threshold at 10 000 page views per year, i.e. if people have more than 10 000 page views on their Wikipedia page one specific year, they will be considered as having a significant influence over customers on that year. For this specific subtask - and only for this one - we won’t consider the quotes for which the speakers are non identified (classified as ‘none’).   
-* **Methods to determine the author's opinion from a piece of text :** For the subtask 3, we apply sentiment analysis to the quotebank dataset to judge the opinion and the type of sentiments expressed in the quotes. The quotes are classified into three categories : positive, negative and neutral. To do so, we will use a machine learning model pre-trained (https://github.com/cardiffnlp/tweeteval) for sentiment analysis called [roBERTa](https://arxiv.org/pdf/2010.12421.pdf). This model has been trained on approximately 58 millions tweets to predict their sentiments, and reached the best results out of a wide range of complex models. We then analyze the correlation between stock market movements of Apple company and sentiments expressed in the quotes. 
-
-***
-### Organization within the team : 
-* [@Bapitou](https://github.com/Bapitou) : Quotebank EDA and filtering (Week 8 P2), task 1 (Week 9-10), task 3 (Week 11), finalize the website (Week 12-13)
-* [@camillefrayssinhes](https://github.com/camillefrayssinhes): Quotebank EDA and filtering (Week 8 P2), task 2 (Week 9-10), Writing up the README and the datastory for the website (Week 11-12-13)
-* [@gaspardvilla](https://github.com/gaspardvilla): Wikipedia API recover the annual number of page views for each speaker (Week 8 M2, Week 9), task 2 (Week 9-10), task 3  (Week 11), finalize the website (Week 12-13)
-* [@raphaelattias](https://github.com/raphaelattias) : Yahoo Finance API EDA and filtering (Week 8 P2), task 1 (Week 9-10), create the website (Week 11-12)
-
-*** 
-### Code Architecture
-
-
-
