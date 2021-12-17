@@ -93,11 +93,15 @@ The **negative quotes** include: *"What we found out during this investigation i
 
 We can already observe in the above histograms that there are far more positive quotes related to Apple than negative or neutral quotes. How do these histograms correlate with the stock market? 
 
-Let's first have a look at the correlation between the number of **positive quotations** related to Apple and the liquidity traded for the Apple stock. We again apply Pearson correlation to see if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.13</b> and the p-value is very small (p < 0.05). Below we look at the evolution of the Apple stock price in a joint relation of the number of positive quotations related to Apple in the media.
-AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
+Let's first have a look at the correlation between the number of **positive quotations** related to Apple and the liquidity traded for the Apple stock. We again apply Pearson correlation to see if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.21</b> and the p-value is very small (p < 0.05). Below we look at the evolution of the Apple stock price in a joint relation of the number of positive quotations related to Apple in the media.
+AJOUTER COMMENTAIRES PLOT
 
-Let's do the same analysis with the **negative quotations** related to Apple. As expected, <b>the Pearson correlation coefficient is only 0.05</b>, that is to say much lower than the one for positive quotations! Nevertheless, we must mention that the p-value for this coefficient is 0.059, so it's not statistically significant at the level 0.05. Again, we visualize in the same plot below the evolution of the stock price with the number of negative quotations related to Apple. 
-AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
+Let's do the same analysis with the **negative quotations** related to Apple. As expected, <b>the Pearson correlation coefficient is only 0.16</b>, thus it is lower than the one for positive correlations, and the p-value is also very small. Again, we visualize in the same plot below the evolution of the stock price with the number of negative quotations related to Apple. 
+AJOUTER COMMENTAIRES PLOT
+
+Interestingly enough, both correlation coefficients are positive! Hence, we may say that regardless of the sentiment, **an increase in the number of quotations is most likely associated with an increase in liquidity and volatility of the Apple stock.** Most importantly we observe that positive quotes have a greater correlation than negative quotes. One hypothesis that we may establish is that while negative quotes may make it more likely to sell a higher volume of stocks than usual (e.g. to get rid of the shares), positive quotes have a higher influence on the volatility and the market may be more willing to buy more stocks.
+
+
 
 {% include neg_pos_market.html %}
 
@@ -108,7 +112,7 @@ In the next section, let's add another level of complexity in our model by takin
 ## Who are the individuals who have influence over potential customers, and do these influencers have an impact on the Apple company image and eventually, on the stock market?
 
 
-In the precedent section, we have looked at the influence of the author’s opinion from the different quotes of our data set on the stock market. But yet, we still miss an important piece of information. Indeed, if the previous president of the United States Donald Trump shares his opinion about Apple and if a random postman shares his opinion, it won't likely have the same effect. Thus: what is the impact of the speaker on the stock market? The response is relatively simple, it depends on **how well known the speaker was at the time he or she was quoted in the media.** And a quite simple way to have that indicators is the number of pageviews on then speakers' Wikipedia page (if there is one!).
+In the precedent section, we have looked at the influence of the author’s opinion from the different quotes of our data set on the stock market. But yet, we still miss an important piece of information. Indeed, if the previous president of the United States Donald Trump shares his opinion about Apple and if a random postman shares his opinion, it won't likely have the same effect. Thus, what is the impact of the speaker on the stock market? The response is relatively simple, it depends on **how well known the speaker was at the time he or she was quoted in the media.** And a quite simple way to have that indicators is the number of pageviews on then speakers' Wikipedia page (if there is one!).
 
 The reason why we look at the fame of the speaker is that **personality plays a huge role in consumer buying behavior**. Indeed, the high level of public attention and the positive emotional responses that define celebrity increase the economic opportunities available to a firm. We hypothesize that quotes from celebrities significantly impact the stock market, whereas quotes from ordinary people have no significant predictive power. One defining characteristic of a celebrity is that it is a social actor who attracts large-scale public attention : the greater the number of people who know of and pay attention to the actor, the greater the extent and value of that celebrity.
 
