@@ -1,7 +1,6 @@
 ---
 layout: home
 ---
-## What is the influence of the media on the Apple stock market?
 
 <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple, the way they are talking about the company in the media, and the fame of the speakers.
 
@@ -103,7 +102,7 @@ AJOUTER COMMENTAIRES PLOT/ PEARSON CORR COEFF
 
 {% include neg_pos_market.html %}
 
-AJOUTER TRANSITION PARTIE 2
+In the next section, let's add another level of complexity in our model by taking into account the fame of the speakers. 
 
 <a id='fame'></a>
 
@@ -139,7 +138,7 @@ RAJOUTER PEARSON CORR
 
 {% include stock_price_against_quotes_score.html %}
 
-TRANSITION
+Now that we have done all the basic analyses, can we train a machine learning model to predict the stock market fluctuations by combining all the above informations?
 
 <a id='model'></a>
 
