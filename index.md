@@ -1,8 +1,9 @@
 ---
 layout: home
 ---
+## What is the influence of the media on the Apple stock market?
 
-<a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple in the media, the fame of the speakers and the way they are talking about the company.
+<a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple</a> has been a market leader in the world of technology ever since the launch of its first product. Furthermore, media are more and more being used to study their impact on stock market movements. We aim to show that the rises and falls in stock prices of Apple correlate to the extent that people are talking about Apple, the way they are talking about the company in the media, and the fame of the speakers.
 
 In the following, we want to investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. We explore the Quotebank data set and filter out any quotes that are not related to the company, the products or its direction board. We then combine it with informations on Apple stock market, collected with the Yahoo Finance API.
 
@@ -35,7 +36,7 @@ Hence, **what if the media would have an impact on the stock market?** For insta
 
 We start with some precursory data visualization to provide a feeling for the data we are working with and to present some first insights.
 
-The original <a href="https://dl.acm.org/doi/10.1145/3437963.3441760"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This extensive data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions in the media**, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, who are the speakers talking about this company and the way they are talking about it.
+The original <a href="https://zenodo.org/record/4277311#.YbxD5Swo9pQ"> Quotebank data set </a> consists of 178 million speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. This extensive data set does not enable us to directly investigate the reciprocal relationships between the fluctuations of the Apple stock market and media coverage related to this company. Instead, in order to have a great preview of **Apple mentions in the media**, we filter out any quotes that are not related to the company, the products or its direction board. We will then analyse to what extent Apple is mentioned according to time in the media, the influence of the sentiments expressed in the quotes and the impact of the notoriety of the speakers talking about this company on the stock market. 
 
 ### How does the media coverage of Apple evolve over time?
 
@@ -47,14 +48,13 @@ We have a look at the daily number of quotes related to Apple between 2008 and 2
 
 {% include daily_quotes.html %}
  
-The finance data we process is provided by the <a href="https://www.yahoofinanceapi.com/"> Yahoo Finance API </a> and allows us to recover informations about the Apple stock market since 2008. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter of the daily volatility it may experience.
+The finance data we process is provided by the <a href="https://www.yahoofinanceapi.com/"> Yahoo Finance API </a> and allows us to recover informations about the Apple stock market since 2008. This API provides quick and easy access to finance metrics for any stock or index. Among the many financial metrics available we decided to focus on the daily stock price and volume. The former will be an indicator of the long term health of the stock, and the latter an indicator of the daily volatility it may experience.
 
-We study the liquidity traded for the Apple stock (*$AAPL*) between 2008 and 2020. Market liquidity depends on how much interest the public has in the particular asset in question. For example, Apple’s stock is much more liquid than the average tech company’s shares. The reason is that the business is well-known, with solid fundamentals, so investors often have a greater interest in it. In the graph below, the liquidity traded is displayed in blue (regular), and the top 2% of days per year for which the liquidity traded is maximal is displayed in red (volatile). We observe the same trend for the top 2% of days for maximal liquidity traded over the years. It seems that **4 to 6 times a year, a higher liquidity is traded and this is likely to correspond to Apple events in which the company announces release and information on each new product before it hits the market.** This allows the consumer to build a demand for the product before it ever hits the shelf. 
+We study the liquidity traded for the Apple stock (*$AAPL*) between 2008 and 2020. Market liquidity depends on how much interest the public has in the particular asset in question. For example, Apple’s stock is much more liquid than the average tech company’s shares. The reason is that the business is well-known, with solid fundamentals, so investors often have a greater interest in it. In the graph below, the liquidity traded is displayed in blue (regular), and the top 2% of days per year for which the liquidity traded is maximal is displayed in red (volatile). We observe the same trend for the top 2% of days for maximal liquidity traded over the years. It seems that **4 to 6 times a year, a higher liquidity is traded and this is likely to correspond to characteristic Apple events** in which the company announces release and information on each new product before it hits the market. This allows the consumer to build a demand for the product before it ever hits the shelf. 
 
 {% include liquidity.html %}
 
-We then study the daily stock price for the Apple stock between 2008 and 2020. The stock price is steadily increasing since 2008. However, we notice some drops, particularly in January 2019 and in March 2020. We will try to provide interesting explanations for these drops using the media coverage of Apple in later analyses.
-RAPH QU'EST-CE QU'IL S'EST PASSÉ EN MARS 2020???????
+We then study the daily stock price for the Apple stock between 2008 and 2020. The stock price is steadily increasing since 2008. However, we notice some drops, particularly in January 2019. We will try to provide interesting explanations for these drops using the media coverage of Apple in later analyses. Most importantly, we observe a significant drop of the stock price in March 2020. This corresponds to the famous Apple stock 4 to 1 split that has likely been done by the company because high share price could deter new investors. However, the shareholders continued to own the same proportion of Apple stock, since the company had effectively increased at the same time the number of shares in circulation. 
 
 {% include stock_price.html %}
 
@@ -62,7 +62,7 @@ RAPH QU'EST-CE QU'IL S'EST PASSÉ EN MARS 2020???????
 
 ### What Can We Learn From the Data? 
 
-A question sprang to our attention during the analysis of thE above plots. Is the stock price correlated to the quotations related to Apple? Let's investigate the **relationship between the fluctuations of the stock market of Apple and the media coverage related to this company** for a period of 13 years (2008–2020). Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media. 
+A question sprang to our attention during the analysis of the above plots. Is the stock price correlated to the quotations related to Apple? Let's investigate the **relationship between the fluctuations of the stock market of Apple and the media coverage related to this company** for a period of 13 years (2008–2020). Combining the former observations, we can look into the evolution of the Apple stock price in a joint relation of the number of quotations related to Apple in the media. 
 
 COMMENTER CE GRAPH
 
@@ -71,7 +71,7 @@ COMMENTER CE GRAPH
 We can conjoin this information with further analyses regarding the qualitative correlation between the number of daily quotations related to Apple and the daily liquidity traded for the Apple stock. We apply <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation </a> to identify if the correlation is statistically significant. The <b>Pearson correlation coefficient is approximately 0.3</b> and the p-value is very small (p < 0.05). Hence, there is a <b>non-negligible positive correlation</b>, which indicates that an increase in liquidity will be likely associated with an increase in discussion related to Apple and the other way around. In order to go deeper, we can divide the quotations into different categories according to the sentiments expressed (e.g. positive, negative or neutral). We would expect to see a stronger correlation coefficient between the daily liquidity traded for the Apple stock with the number of daily positive quotations related to Apple rather than with the number of daily negative quotations related to Apple. 
 
 
-From the above observations, we had the intuition that each quarter report released by Apple was synonymous with a day of high volatility. A quarterly report is a summary or collection of unaudited financial statements, such as  gross revenue, net profit, operational expenses, and cash flow. As we have 252 trading days in a year and 4 quarter reports per year, we expect a periodicity of high liquidity days of around 252/4 = 64 days. This in fact validated by the next analysis, which performs a seasonal analysis over a wide range of days period, and keep the periods with the lowest null p-value (i.e the most likely period). Incredibly, **the period that was retained by the model corresponds exactly to the 64 days that separate two quarters!** 
+From the above observations, we had the intuition that each quarter report released by Apple was synonymous with a day of high volatility. A quarterly report is a summary or collection of unaudited financial statements, such as  gross revenue, net profit, operational expenses, and cash flow. As we have 252 trading days in a year and 4 quarter reports per year, we expect a periodicity of high liquidity days of around 64 days. This in fact validated by the next analysis, which performs a seasonal analysis over a wide range of days period, and keep the periods with the lowest null p-value (i.e the most likely period). Incredibly, **the period that was retained by the model corresponds exactly to the 64 days that separate two quarters!** 
 
 {% include seasonal_analysis.html %}
 
@@ -122,9 +122,7 @@ In the following plot, we have chosen 6 events which were highly mediatized betw
 
 {% include distribution_valence_fame.html %}
 
-
-
-
+<br>
 
 
 ### What is the impact of the quotations according to the speaker's notoriety on the stock market? 
