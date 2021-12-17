@@ -158,7 +158,7 @@ RAJOUTER 2/3 MOTS CCL
 
 ### Anything else?
 
-The PandaRiders wish you Happy Christmas Holidays and a Happy New Year 2022! 
+The Panda Riders wish you Happy Christmas Holidays and a Happy New Year 2022! 
 And don't forget that "An AAPL a day keeps the pandas away!" 
 
 
