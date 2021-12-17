@@ -87,7 +87,7 @@ Below, we display the distribution of the quotations from 2008 to 2020 according
 {% include all_quotes_sentiment.html %}
 
 For example, the **positive quotes** include: *"This team is unbelievable in creating hardware and software and services and getting them all to work together"* by <a href="https://en.wikipedia.org/wiki/Tim_Cook">Tim Cook </a> - the CEO of Apple -  or *"One reason I'm bullish on Apple is because Tim [ Cook ] is a very capable CEO. And he's one of the few people on the planet who I think is going to excel in an environment that has so many different business lines"* by <a href="https://en.wikipedia.org/wiki/Jon_Porter"> Jon Porter </a>, an American politician. 
-The **negative quotes** include: *"What we found out during this investigation is Apple was losing tens of millions of dollars on this and people think oh Apple is a big company, they can handle it, well all those costs get passed on to the consumers"* by <a href="https://en.wikipedia.org/wiki/Michael_K._Williams"> Michael Williams </a> - an American actor - or *"How could Apple be so stupid to conceive of such a flop!"* by an anonymous speaker. 
+The **negative quotes** include: *"What we found out during this investigation is Apple was losing tens of millions of dollars on this and people think oh Apple is a big company, they can handle it, well all those costs get passed on to the consumers"* by <a href="https://en.wikipedia.org/wiki/Michael_K._Williams"> Michael Williams </a> - an American actor - or *"How could Apple be so stupid to conceive of such a flop!"* by an <u>anonymous</u> speaker. 
 
 We can already observe in the above histograms that there are far more positive quotes related to Apple than negative or neutral quotes. How do these histograms correlate with the stock market? 
 
@@ -109,9 +109,9 @@ In the next section, let's add another level of complexity in our model by takin
 
 In the precedent section, we have looked at the influence of the author’s opinion from the different quotes of our data set on the stock market. But yet, we still miss an important piece of information. Indeed, if the previous president of the United States Donald Trump shares his opinion about Apple and if a random postman shares his opinion, it won't likely have the same effect. Thus, what is the impact of the speaker on the stock market? The response is relatively simple, it depends on **how well known the speaker was at the time he or she was quoted in the media.** And a quite simple way to have that indicators is the number of pageviews on then speakers' Wikipedia page (if there is one!).
 
-The reason why we look at the fame of the speaker is that **personality plays a huge role in consumer buying behavior**. Indeed, the high level of public attention and the positive emotional responses that define celebrity increase the economic opportunities available to a firm. We hypothesize that quotes from celebrities significantly impact the stock market, whereas quotes from ordinary people have no significant predictive power. One defining characteristic of a celebrity is that it is a social actor who attracts large-scale public attention : the greater the number of people who know of and pay attention to the actor, the greater the extent and value of that celebrity.
+The reason why we look at the fame of the speaker is that **personality plays a huge role in consumer buying behavior**. Indeed, the high level of public attention and the positive emotional responses that define celebrity increase the economic opportunities available to a firm. We hypothesize that quotes from celebrities significantly impact the stock market, whereas quotes from ordinary people have no significant predictive power. One defining characteristic of a celebrity is that it is a social actor who attracts large-scale public attention : the greater the number of people who know and pay attention to the actor, the greater the extent and value of that celebrity.
 
-Therefore, we speculate that not only the sentiment expressed in the quote, but also the fame of the speaker both have an influence on the Apple stock market. 
+Therefore, we speculate that not only the sentiment expressed in the quote, but also the fame of the speaker has an influence on the Apple stock market. 
 
 As an important next step to explore the impact of the speaker fame on the stock market in combination to the valence of the quotations, we need to find a metric to identify how much a speaker is notorious. Are the different speakers poorly influential, moderately influential or highly influential? To achieve this, we use Wikipedia that has almost one page for every famous person. We hypothesize that **the higher the Wikipedia page view statistics, the more notoriety the speaker has**. Considering that we have only access to the Wikipedia page views since 2015, for this part we focus our analysis on the quotations released between 2015 and 2020. 
 
@@ -147,13 +147,13 @@ Now that we have done all the basic analyses, can we train a machine learning mo
 After the basic analysis, we attempt to train a machine learning model to predict the daily stock price using the quotes related to Apple, speakers data and past stock performance. The model is a modular linear regression model, that can take into account past performance and additional factors. The model is trained on data from 2015 to 2017 and predict the daily stock price in 2018.
 The resulting regression model did not perform well to predict the stock price during the first semester of 2018. However, it is quite effective in predicting the stock price during the last semester of 2018. Especially, it has well predicted the little drop in the stock price in June 2018! 
 
-RAJOUTER 2/3 MOTS CCL
-
 {% include future_stock_prediction.html %}
 
-### Anything else?
+### … but is this that simple?
 
-The Panda Riders wish you Happy Christmas Holidays and a Happy New Year 2022! 
+So far, we have been able to demonstrate that taking into account the media coverage, the sentiments expressed in the quotes, and the notoriety of the speakers, there exists a positive correlation between the stock market and the daily number of quotes related to Apple. Nevertheless, if one looks at the big picture, the correlations are not significantly high enough, and we won't be able with our model to accurately predict the stock market. Unfortunately it's not this way that the pandas will get rich! 
+
+To end this data story, the Panda Riders wish you a Happy Christmas Holidays and a Happy New Year 2022! 
 And don't forget that "An AAPL a day keeps the pandas away!" 
 
 
