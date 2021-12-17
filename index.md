@@ -130,8 +130,7 @@ In the following plot, we add all the positive and negative scores separately, a
 
 The significant peak at the beginning of 2016 corresponds to the FBI story. What happened at this date? Apple has become embroiled in a very <a href="https://www.nasdaq.com/articles/will-apple-inc.-aapl-stock-feel-a-bite-from-the-fbi-2016-02-23"> public battle with the FBI </a> over whether or not the tech firm should unlock an iPhone used by one of the shooters in the San Bernardino terror attacks. The media had a field day! This debate could have gone either way for the Apple stock. On the one hand, the media could have highlighted Apple's refusal to design a program to unlock iPhones underscores the company's hardline against violating customer privacy, and this likely gave customers another reason to choose Apple products. On the other hand, the media could have shifted the narrative and painted Apple in a negative light for obstructing an investigation into a terror plot, and this could have severely affected the Apple stock.
 
-Unfortunately, the plot does not give us a lot of information about the correlation between the fame score and the stock market. We performed a statistical analysis and the Pearson correlation coefficient is ……… 
-RAJOUTER PEARSON CORR
+The plot does not give us a lot of information about the correlation between the fame score and the stock market. We performed a statistical analysis, but unfortunately, the Pearson correlation coefficient between the positive - respectively negative - fame score and the daily stock market liquidity is 0.02 - respectively 0.03 - with a non significant p-value at the level 0.05. A possible reason for these low correlation coefficients is that the fame score we used might not be an optimal metric to estimate the fame of the speakers. 
 
 
 {% include stock_price_against_quotes_score.html %}
@@ -151,7 +150,7 @@ The resulting regression model did not perform well to predict the stock price d
 
 ### … but is this that simple?
 
-So far, we have been able to demonstrate that taking into account the media coverage, the sentiments expressed in the quotes, and the notoriety of the speakers, there exists a positive correlation between the stock market and the daily number of quotes related to Apple. Nevertheless, if one looks at the big picture, the correlations are not significantly high enough, and we won't be able with our model to accurately predict the stock market. Unfortunately it's not this way that the pandas will get rich! 
+So far, we have been able to demonstrate that taking into account the media coverage, the sentiments expressed in the quotes, and the notoriety of the speakers, there exists a positive correlation between the stock market and the daily number of quotes related to Apple. Nevertheless, if one looks at the big picture, the correlations are not significantly high enough, and we won't be able with our model to accurately predict the stock market. Unfortunately it's not this way that we will get rich! 
 
 To end this data story, the Panda Riders wish you a Happy Christmas Holidays and a Happy New Year 2022! 
 And don't forget that "An AAPL a day keeps the pandas away!" 
